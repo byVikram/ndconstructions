@@ -59,3 +59,27 @@ window.addEventListener("load", () => {
 		}, 500); // match with your fade transition duration
 	}
 });
+
+function loadBanner(bannerData) {
+	fetch("./components/banner.html")
+		.then(res => res.text())
+		.then(data => {
+			const bannerContainer = document.getElementById("banner");
+			if (bannerContainer) {
+				bannerContainer.innerHTML = data;
+
+				document.getElementById("banner-title").textContent = bannerData.title || "";
+				document.getElementById("banner-subtitle").textContent = bannerData.subtitle || "";
+
+				const bgElement = document.getElementById("banner-bg");
+				if (bgElement && bannerData.backgroundImage) {
+					bgElement.style.backgroundImage = `url('${bannerData.backgroundImage}')`;
+					bgElement.style.backgroundRepeat = "no-repeat";
+
+					const isMobile = window.matchMedia("(max-width: 768px)").matches;
+					// bgElement.style.backgroundSize = isMobile ? "contain" : "cover";
+					bgElement.style.backgroundPosition = isMobile ? "left" : "top";
+				}
+			}
+		});
+}
