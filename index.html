@@ -9,23 +9,45 @@
 	<!-- Favicon -->
 	<link rel="icon" href="./assets/favicon.webp" type="image/x-icon" />
 
-	<!-- Preconnects for Performance -->
+	<!-- Preload Key Resources -->
+	<link rel="preload" as="image" href="./assets/home-banner.webp" />
+	<link rel="preload" as="style"
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" />
+
+	<!-- Preconnect for Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-		rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+	<!-- Google Fonts: Load non-blocking -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" media="print"
+		onload="this.media='all'" />
+	<noscript>
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" />
+	</noscript>
 
-	<!-- Icons & Tailwind -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
-	<script src="https://cdn.tailwindcss.com/3.4.16"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
-	<script src="./scripts/tailwind-config.js"></script>
+	<!-- Icons (defer if not above the fold) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" media="print"
+		onload="this.media='all'" />
+	<noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+	</noscript>
+
+	<!-- Tailwind via CDN (Use compiled version instead for production) -->
+	<!-- Instead of this CDN: -->
+	<!-- <script src="https://cdn.tailwindcss.com/3.4.16"></script> -->
+	<!-- Use compiled Tailwind CSS and inline critical styles -->
 	<link rel="stylesheet" href="./styles/styles.css" />
 
-	<!-- Primary Meta Tags -->
+	<!-- Defer heavy JS (like ECharts) -->
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+	<script defer src="./scripts/tailwind-config.js"></script>
+
+	<!-- SEO Meta Tags -->
 	<meta name="title" content="ND Constructions | Trusted Construction Company in Hassan, Karnataka">
 	<meta name="description"
 		content="ND Constructions is a trusted construction company based in Hassan, Karnataka, providing expert residential, commercial, and infrastructure construction services with quality, reliability, and on-time delivery.">
@@ -35,7 +57,7 @@
 	<meta name="robots" content="index, follow">
 	<meta name="language" content="English">
 
-	<!-- Open Graph / Facebook -->
+	<!-- Open Graph -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://byvikram.github.io/ndconstructions/">
 	<meta property="og:title" content="ND Constructions | Trusted Construction Company in Hassan, Karnataka">
@@ -54,7 +76,7 @@
 	<!-- Canonical -->
 	<link rel="canonical" href="https://byvikram.github.io/ndconstructions/" />
 
-	<!-- Schema.org JSON-LD Structured Data -->
+	<!-- Schema.org Structured Data -->
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
@@ -80,9 +102,8 @@
 		}
 	}
 	</script>
-
-
 </head>
+
 
 <body class="bg-gray-50">
 	<div id="gif-loader"></div>
@@ -165,8 +186,8 @@
 				<!-- Service 1 -->
 				<div
 					class="service-card bg-gray-50 rounded-lg shadow-md overflow-hidden transition-transform duration-300">
-					<img src="./assets/services/Villa.webp"
-						alt="Residential Construction" class="w-full h-48 object-cover object-top" />
+					<img src="./assets/services/Villa.webp" alt="Residential Construction"
+						class="w-full h-48 object-cover object-top" />
 					<div class="p-6">
 						<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
 							<i class="ri-home-4-line ri-lg text-primary"></i>
@@ -207,8 +228,8 @@
 				<!-- Service 2 -->
 				<div
 					class="service-card bg-gray-50 rounded-lg shadow-md overflow-hidden transition-transform duration-300">
-					<img src="./assets/services/Villa.webp"
-						alt="Commercial Construction" class="w-full h-48 object-cover object-top" />
+					<img src="./assets/services/Villa.webp" alt="Commercial Construction"
+						class="w-full h-48 object-cover object-top" />
 					<div class="p-6">
 						<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
 							<i class="ri-building-line ri-lg text-primary"></i>
@@ -249,8 +270,8 @@
 				<!-- Service 3 -->
 				<div
 					class="service-card bg-gray-50 rounded-lg shadow-md overflow-hidden transition-transform duration-300">
-					<img src="./assets/services/Villa.webp"
-						alt="Renovation Services" class="w-full h-48 object-cover object-top" />
+					<img src="./assets/services/Villa.webp" alt="Renovation Services"
+						class="w-full h-48 object-cover object-top" />
 					<div class="p-6">
 						<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
 							<i class="ri-tools-line ri-lg text-primary"></i>
@@ -291,8 +312,8 @@
 				<!-- Service 4 -->
 				<div
 					class="service-card bg-gray-50 rounded-lg shadow-md overflow-hidden transition-transform duration-300">
-					<img src="./assets/services/Villa.webp"
-						alt="Infrastructure Development" class="w-full h-48 object-cover object-top" />
+					<img src="./assets/services/Villa.webp" alt="Infrastructure Development"
+						class="w-full h-48 object-cover object-top" />
 					<div class="p-6">
 						<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
 							<i class="ri-road-map-line ri-lg text-primary"></i>
@@ -333,8 +354,8 @@
 				<!-- Service 5 -->
 				<div
 					class="service-card bg-gray-50 rounded-lg shadow-md overflow-hidden transition-transform duration-300">
-					<img src="./assets/services/Villa.webp"
-						alt="Green Building" class="w-full h-48 object-cover object-top" />
+					<img src="./assets/services/Villa.webp" alt="Green Building"
+						class="w-full h-48 object-cover object-top" />
 					<div class="p-6">
 						<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
 							<i class="ri-leaf-line ri-lg text-primary"></i>
@@ -375,8 +396,8 @@
 				<!-- Service 6 -->
 				<div
 					class="service-card bg-gray-50 rounded-lg shadow-md overflow-hidden transition-transform duration-300">
-					<img src="./assets/services/Villa.webp"
-						alt="Project Management" class="w-full h-48 object-cover object-top" />
+					<img src="./assets/services/Villa.webp" alt="Project Management"
+						class="w-full h-48 object-cover object-top" />
 					<div class="p-6">
 						<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
 							<i class="ri-calendar-check-line ri-lg text-primary"></i>
@@ -460,8 +481,7 @@
 				<!-- Project 1 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="residential">
-					<img src="./assets/services/Villa.webp"
-						alt="Luxury Residence"
+					<img src="./assets/services/Villa.webp" alt="Luxury Residence"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
@@ -509,8 +529,7 @@
 				<!-- Project 3 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="infrastructure">
-					<img src="./assets/services/Villa.webp"
-						alt="Bridge Construction"
+					<img src="./assets/services/Villa.webp" alt="Bridge Construction"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
@@ -535,8 +554,7 @@
 				<!-- Project 4 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="commercial">
-					<img src="./assets/services/Villa.webp"
-						alt="Retail Center"
+					<img src="./assets/services/Villa.webp" alt="Retail Center"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
@@ -560,8 +578,7 @@
 				<!-- Project 5 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="residential">
-					<img src="./assets/services/Villa.webp"
-						alt="Apartment Complex"
+					<img src="./assets/services/Villa.webp" alt="Apartment Complex"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
@@ -585,8 +602,7 @@
 				<!-- Project 6 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="infrastructure">
-					<img src="./assets/services/Villa.webp"
-						alt="Public Park"
+					<img src="./assets/services/Villa.webp" alt="Public Park"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
@@ -670,8 +686,8 @@
 								</p>
 								<div class="flex items-center">
 									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20middle-aged%20Caucasian%20man%20with%20short%20brown%20hair%20and%20glasses%20wearing%20a%20business%20casual%20outfit.%20The%20image%20shows%20a%20friendly%2C%20confident%20expression%20with%20a%20neutral%20background%2C%20suitable%20for%20a%20professional%20testimonial%20or%20profile%20picture.&width=100&height=100&seq=15&orientation=squarish"
-											alt="Client" class="w-full h-full object-cover" />
+										<img src="./assets/testimonials/testimonials-1.jpg" alt="Client"
+											class="w-full h-full object-cover" />
 									</div>
 									<div>
 										<h4 class="font-semibold text-gray-800">
@@ -704,8 +720,8 @@
 								</p>
 								<div class="flex items-center">
 									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20an%20Asian%20woman%20in%20her%2040s%20with%20shoulder-length%20black%20hair%20wearing%20a%20business%20suit.%20The%20image%20shows%20a%20confident%2C%20professional%20expression%20with%20a%20neutral%20background%2C%20suitable%20for%20a%20corporate%20testimonial%20or%20executive%20profile%20picture.&width=100&height=100&seq=16&orientation=squarish"
-											alt="Client" class="w-full h-full object-cover" />
+										<img src="./assets/testimonials/testimonials-2.jpg" alt="Client"
+											class="w-full h-full object-cover" />
 									</div>
 									<div>
 										<h4 class="font-semibold text-gray-800">Jennifer Chen</h4>
@@ -736,8 +752,8 @@
 								</p>
 								<div class="flex items-center">
 									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20an%20African%20American%20man%20in%20his%2050s%20wearing%20a%20business%20suit%20with%20a%20tie.%20The%20image%20shows%20a%20warm%2C%20professional%20expression%20with%20a%20neutral%20background%2C%20suitable%20for%20a%20corporate%20testimonial%20or%20executive%20profile%20picture.&width=100&height=100&seq=17&orientation=squarish"
-											alt="Client" class="w-full h-full object-cover" />
+										<img src="./assets/testimonials/testimonials-3.jpg" alt="Client"
+											class="w-full h-full object-cover" />
 									</div>
 									<div>
 										<h4 class="font-semibold text-gray-800">
@@ -769,8 +785,8 @@
 								</p>
 								<div class="flex items-center">
 									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20Hispanic%20woman%20in%20her%2030s%20with%20long%20brown%20hair%20wearing%20professional%20attire.%20The%20image%20shows%20a%20friendly%2C%20confident%20expression%20with%20a%20neutral%20background%2C%20suitable%20for%20a%20professional%20testimonial%20or%20government%20official%20profile%20picture.&width=100&height=100&seq=18&orientation=squarish"
-											alt="Client" class="w-full h-full object-cover" />
+										<img src="./assets/testimonials/testimonials-4.jpg" alt="Client"
+											class="w-full h-full object-cover" />
 									</div>
 									<div>
 										<h4 class="font-semibold text-gray-800">
@@ -803,8 +819,8 @@
 								</p>
 								<div class="flex items-center">
 									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20middle-aged%20Indian%20man%20with%20short%20black%20hair%20wearing%20business%20casual%20attire.%20The%20image%20shows%20a%20friendly%2C%20professional%20expression%20with%20a%20neutral%20background%2C%20suitable%20for%20a%20business%20testimonial%20or%20retail%20owner%20profile%20picture.&width=100&height=100&seq=19&orientation=squarish"
-											alt="Client" class="w-full h-full object-cover" />
+										<img src="./assets/testimonials/testimonials-5.jpg" alt="Client"
+											class="w-full h-full object-cover" />
 									</div>
 									<div>
 										<h4 class="font-semibold text-gray-800">Raj Patel</h4>

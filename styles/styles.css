@@ -30,7 +30,7 @@ body {
 
 
 .hero-section {
-	background-image: linear-gradient(to right, rgba(15, 76, 129, 0.9), rgba(15, 76, 129, 0.7), rgba(15, 76, 129, 0.5), rgba(15, 76, 129, 0.3), rgba(15, 76, 129, 0.1), rgba(0, 0, 0, 0)), url('https://readdy.ai/api/search-image?query=A%20modern%20construction%20site%20with%20a%20large%20crane%20and%20workers%20in%20safety%20gear%2C%20building%20a%20modern%20glass%20and%20steel%20structure.%20The%20image%20shows%20a%20professional%20construction%20environment%20with%20clear%20blue%20sky%2C%20creating%20a%20sense%20of%20progress%20and%20development.%20The%20left%20side%20has%20a%20dark%20blue%20gradient%20that%20transitions%20to%20transparent%20on%20the%20right%20side.&width=1200&height=600&seq=1&orientation=landscape');
+	background-image: linear-gradient(to right, rgba(15, 76, 129, 0.9), rgba(15, 76, 129, 0.7), rgba(15, 76, 129, 0.5), rgba(15, 76, 129, 0.3), rgba(15, 76, 129, 0.1), rgba(0, 0, 0, 0)), url('/assets/home-banner.webp');
 	background-size: cover;
 	background-position: center;
 }
