@@ -10,7 +10,7 @@
 	<link rel="icon" href="./assets/favicon.webp" type="image/x-icon" />
 
 	<!-- Preload Key Resources -->
-	<link rel="preload" as="image" href="./assets/home-banner.webp" />
+	<link rel="preload" as="image" href="./assets/home-banner.webp" fetchpriority="high" />
 	<link rel="preload" as="style"
 		href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
 	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" />
@@ -48,7 +48,7 @@
 	<!-- SEO Meta Tags -->
 	<meta name="title" content="ND Constructions | Trusted Construction Company in Hassan, Karnataka">
 	<meta name="description"
-		content="ND Constructions is a trusted construction company based in Hassan, Karnataka, providing expert residential, commercial, and infrastructure construction services with quality, reliability, and on-time delivery.">
+		content="Expert construction services in Hassan, Karnataka. ND Constructions delivers quality in every residential, commercial, and infrastructure project.">
 	<meta name="keywords"
 		content="constructions in hassan, constructions in karnataka, ND Constructions, ND Constructions Hassan, construction company Hassan, building contractors Hassan, residential construction Karnataka, commercial construction Hassan, infrastructure development Hassan, civil engineering Hassan, project management Hassan, construction services Karnataka, renovation services Hassan, green building Hassan">
 	<meta name="author" content="ND Constructions">
@@ -479,7 +479,7 @@
 				<!-- Project 1 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="residential">
-					<img src="./assets/services/Villa.webp" alt="Luxury Residence"
+					<img src="./assets/services/Villa.webp" alt="Luxury Residence" loading="lazy"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
@@ -503,7 +503,7 @@
 				<!-- Project 2 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="commercial">
-					<img src="./assets/services/Villa.webp"
+					<img src="./assets/services/Villa.webp" loading="lazy"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
@@ -527,7 +527,7 @@
 				<!-- Project 3 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="infrastructure">
-					<img src="./assets/services/Villa.webp" alt="Bridge Construction"
+					<img src="./assets/services/Villa.webp" alt="Bridge Construction" loading="lazy"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
@@ -552,7 +552,7 @@
 				<!-- Project 4 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="commercial">
-					<img src="./assets/services/Villa.webp" alt="Retail Center"
+					<img src="./assets/services/Villa.webp" alt="Retail Center" loading="lazy"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
@@ -576,7 +576,7 @@
 				<!-- Project 5 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="residential">
-					<img src="./assets/services/Villa.webp" alt="Apartment Complex"
+					<img src="./assets/services/Villa.webp" alt="Apartment Complex" loading="lazy"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
@@ -599,8 +599,8 @@
 				</div>
 				<!-- Project 6 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
-					data-category="infrastructure">
-					<img src="./assets/services/Villa.webp" alt="Public Park"
+					data-category="infrastructure"> 
+					<img src="./assets/services/Villa.webp" alt="Public Park" loading="lazy"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
@@ -684,7 +684,7 @@
 								</p>
 								<div class="flex items-center">
 									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="./assets/testimonials/testimonials-1.jpg" alt="Client"
+										<img src="./assets/testimonials/testimonials-1.jpg" alt="Client" loading="lazy"
 											class="w-full h-full object-cover" />
 									</div>
 									<div>
@@ -718,7 +718,7 @@
 								</p>
 								<div class="flex items-center">
 									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="./assets/testimonials/testimonials-2.jpg" alt="Client"
+										<img src="./assets/testimonials/testimonials-2.jpg" alt="Client" loading="lazy"
 											class="w-full h-full object-cover" />
 									</div>
 									<div>
@@ -750,7 +750,7 @@
 								</p>
 								<div class="flex items-center">
 									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="./assets/testimonials/testimonials-3.jpg" alt="Client"
+										<img src="./assets/testimonials/testimonials-3.jpg" alt="Client" loading="lazy"
 											class="w-full h-full object-cover" />
 									</div>
 									<div>
@@ -783,7 +783,7 @@
 								</p>
 								<div class="flex items-center">
 									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="./assets/testimonials/testimonials-4.jpg" alt="Client"
+										<img src="./assets/testimonials/testimonials-4.jpg" alt="Client" loading="lazy"
 											class="w-full h-full object-cover" />
 									</div>
 									<div>
@@ -817,7 +817,7 @@
 								</p>
 								<div class="flex items-center">
 									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="./assets/testimonials/testimonials-5.jpg" alt="Client"
+										<img src="./assets/testimonials/testimonials-5.jpg" alt="Client" loading="lazy"
 											class="w-full h-full object-cover" />
 									</div>
 									<div>
@@ -952,7 +952,7 @@
 										Office Address
 									</h4>
 									<p class="text-gray-600">
-										1234 Construction Avenue<br />Building Heights, NY 10001
+										Vijaynagar<br />Hassan 573201
 									</p>
 								</div>
 							</div>
@@ -963,8 +963,7 @@
 								</div>
 								<div>
 									<h4 class="font-medium text-gray-800 mb-1">Phone Number</h4>
-									<p class="text-gray-600">(555) 123-4567</p>
-									<p class="text-gray-600">(555) 987-6543</p>
+									<p class="text-gray-600">8050761016</p>
 								</div>
 							</div>
 							<div class="flex items-start">
@@ -976,8 +975,7 @@
 									<h4 class="font-medium text-gray-800 mb-1">
 										Email Address
 									</h4>
-									<p class="text-gray-600">info@ND.com</p>
-									<p class="text-gray-600">projects@ND.com</p>
+									<p class="text-gray-600">info@ndconstrctions.in</p>
 								</div>
 							</div>
 							<div class="flex items-start">
