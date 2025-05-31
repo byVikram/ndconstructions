@@ -6,15 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		fetch("./components/footer.html").then(res => res.text())
 	]).then(([loaderHTML, headerHTML, footerHTML]) => {
 		// Inject loader HTML into the DOM
-		// const loaderWrapper = document.createElement("div");
-		// loaderWrapper.innerHTML = loaderHTML;
-		// document.body.appendChild(loaderWrapper);
-
 		document.getElementById("gif-loader").innerHTML = loaderHTML;
 		document.getElementById("header").innerHTML = headerHTML;
 		document.getElementById("footer").innerHTML = footerHTML;
-
-		// ✅ Now DOM has the header elements — safe to access them
 
 		// Mobile Menu Toggle
 		const mobileMenuButton = document.getElementById("mobile-menu-button");
@@ -59,6 +53,7 @@ window.addEventListener("load", () => {
 		}, 500); // match with your fade transition duration
 	}
 });
+
 
 function loadBanner(bannerData) {
 	fetch("./components/banner.html")

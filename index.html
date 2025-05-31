@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>ND Constructions | Trusted Construction Company in Hassan, Karnataka</title>
+	<title>ND Constructions | Trusted Construction Company</title>
 
 	<!-- Favicon -->
 	<link rel="icon" href="./assets/favicon.webp" type="image/x-icon" />
@@ -46,7 +46,7 @@
 	<script defer src="./scripts/tailwind-config.js"></script>
 
 	<!-- SEO Meta Tags -->
-	<meta name="title" content="ND Constructions | Trusted Construction Company in Hassan, Karnataka">
+	<meta name="title" content="ND Constructions | Trusted Construction Company">
 	<meta name="description"
 		content="Expert construction services in Hassan, Karnataka. ND Constructions delivers quality in every residential, commercial, and infrastructure project.">
 	<meta name="keywords"
@@ -80,9 +80,9 @@
 		"@context": "https://schema.org",
 		"@type": "LocalBusiness",
 		"name": "ND Constructions",
-		"image": "https://ndconstructions.com/assets/office-building.jpg",
+		"image": "https://ndconstructions.com/assets/about-us.jpg",
 		"url": "https://ndconstructions.com",
-		"logo": "https://ndconstructions.com/assets/logo.png",
+		"logo": "https://ndconstructions.com/assets/og-image.jpg",
 		"description": "ND Constructions is a leading construction company in Hassan, Karnataka, specializing in residential, commercial, and infrastructure development projects. We deliver quality and innovation with every project.",
 		"telephone": "+918050761016",
 		"email": "info@ndconstructions.com",
@@ -128,25 +128,46 @@
 		},
 		"makesOffer": [
 			{
-			"@type": "Offer",
-			"itemOffered": {
-				"@type": "Service",
-				"name": "Residential Construction"
-			}
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Residential Interior Design"
+				}
 			},
 			{
-			"@type": "Offer",
-			"itemOffered": {
-				"@type": "Service",
-				"name": "Commercial Construction"
-			}
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Commercial Interior Design"
+				}
 			},
 			{
-			"@type": "Offer",
-			"itemOffered": {
-				"@type": "Service",
-				"name": "Infrastructure Development"
-			}
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Renovation Services"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Furniture And Decor Selection"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Space Planning & Optimization"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Home Staging Services"
+				}
 			}
 		],
 		"founder": {
@@ -182,16 +203,28 @@
 					construction services that transform your ideas into stunning
 					structures.
 				</p>
+
+
 				<div class="flex flex-wrap gap-4">
-					<button
-						class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors text-lg font-medium">
-						Get a Free Quote
-					</button>
-					<button
+					<a href="tel:+918050761016"
+						class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors text-lg font-medium inline-flex items-center"
+						aria-label="Call Now">
+						<span>Call Now</span>
+						<i class="ri-phone-line text-xl ml-2"></i>
+					</a>
+
+
+					<a href="/contact-us"
+						class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors text-lg font-medium inline-block">
+						Contact Us
+					</a>
+
+					<a href="/#projects"
 						class="bg-white text-primary px-6 py-3 !rounded-button whitespace-nowrap hover:bg-gray-100 transition-colors text-lg font-medium">
 						Our Projects
-					</button>
+					</a>
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -200,25 +233,25 @@
 		<div class="container mx-auto px-4">
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 				<div class="text-center p-6 rounded shadow-sm bg-gray-50">
-					<div class="text-4xl font-bold text-primary mb-2 counter-value" data-target="25">
+					<div class="text-4xl font-bold text-primary mb-2 counter-value" data-target="1">
 						0
 					</div>
 					<p class="text-gray-600">Years of Experience</p>
 				</div>
 				<div class="text-center p-6 rounded shadow-sm bg-gray-50">
-					<div class="text-4xl font-bold text-primary mb-2 counter-value" data-target="350">
+					<div class="text-4xl font-bold text-primary mb-2 counter-value" data-target="10">
 						0
 					</div>
 					<p class="text-gray-600">Projects Completed</p>
 				</div>
 				<div class="text-center p-6 rounded shadow-sm bg-gray-50">
-					<div class="text-4xl font-bold text-primary mb-2 counter-value" data-target="85">
+					<div class="text-4xl font-bold text-primary mb-2 counter-value" data-target="5">
 						0
 					</div>
 					<p class="text-gray-600">Team Members</p>
 				</div>
 				<div class="text-center p-6 rounded shadow-sm bg-gray-50">
-					<div class="text-4xl font-bold text-primary mb-2 counter-value" data-target="275">
+					<div class="text-4xl font-bold text-primary mb-2 counter-value" data-target="10">
 						0
 					</div>
 					<p class="text-gray-600">Happy Clients</p>
@@ -245,18 +278,19 @@
 				<!-- Service 1 -->
 				<div
 					class="service-card bg-gray-50 rounded-lg shadow-md overflow-hidden transition-transform duration-300">
-					<img src="./assets/services/Villa.webp" alt="Residential Construction"
+					<img src="./assets/services/image-1.webp" alt="Residential Interior Design" loading="lazy"
 						class="w-full h-48 object-cover object-top" />
 					<div class="p-6">
 						<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
 							<i class="ri-home-4-line ri-lg text-primary"></i>
 						</div>
 						<h3 class="text-xl font-semibold text-gray-800 mb-3">
-							Residential Construction
+
+							Residential Interior Design
 						</h3>
 						<p class="text-gray-600 mb-4">
-							We build custom homes, multi-family residences, and residential
-							complexes with attention to detail and quality craftsmanship.
+							We design custom homes, multi-family residences, and residential communities with a focus on
+							thoughtful layout, elegant finishes, and quality craftsmanship.
 						</p>
 						<button class="text-primary font-medium flex items-center service-expand-btn"
 							data-target="service-1-details">
@@ -287,18 +321,18 @@
 				<!-- Service 2 -->
 				<div
 					class="service-card bg-gray-50 rounded-lg shadow-md overflow-hidden transition-transform duration-300">
-					<img src="./assets/services/Villa.webp" alt="Commercial Construction"
+					<img src="./assets/services/image-2.webp" alt="Commercial Interior Design" loading="lazy"
 						class="w-full h-48 object-cover object-top" />
 					<div class="p-6">
 						<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
 							<i class="ri-building-line ri-lg text-primary"></i>
 						</div>
 						<h3 class="text-xl font-semibold text-gray-800 mb-3">
-							Commercial Construction
+							Commercial Interior Design
 						</h3>
 						<p class="text-gray-600 mb-4">
-							From office buildings to retail spaces, we deliver commercial
-							projects that meet business needs and enhance productivity.
+							From offices and retail stores to hospitality spaces, we create functional and visually
+							impactful environments that align with your brand and business goals.
 						</p>
 						<button class="text-primary font-medium flex items-center service-expand-btn"
 							data-target="service-2-details">
@@ -329,7 +363,7 @@
 				<!-- Service 3 -->
 				<div
 					class="service-card bg-gray-50 rounded-lg shadow-md overflow-hidden transition-transform duration-300">
-					<img src="./assets/services/Villa.webp" alt="Renovation Services"
+					<img src="./assets/services/image-3.webp" alt="Renovation Services" loading="lazy"
 						class="w-full h-48 object-cover object-top" />
 					<div class="p-6">
 						<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
@@ -339,8 +373,8 @@
 							Renovation Services
 						</h3>
 						<p class="text-gray-600 mb-4">
-							Transform existing spaces with our comprehensive renovation
-							services for both residential and commercial properties.
+							Reimagine your interiors with full-service renovation solutions, tailored for both homes and
+							commercial spaces — including layout updates, structural changes, and finishes.
 						</p>
 						<button class="text-primary font-medium flex items-center service-expand-btn"
 							data-target="service-3-details">
@@ -371,18 +405,18 @@
 				<!-- Service 4 -->
 				<div
 					class="service-card bg-gray-50 rounded-lg shadow-md overflow-hidden transition-transform duration-300">
-					<img src="./assets/services/Villa.webp" alt="Infrastructure Development"
+					<img src="./assets/services/image-4.webp" alt="Furniture And Decor Selection" loading="lazy"
 						class="w-full h-48 object-cover object-top" />
 					<div class="p-6">
 						<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
 							<i class="ri-road-map-line ri-lg text-primary"></i>
 						</div>
 						<h3 class="text-xl font-semibold text-gray-800 mb-3">
-							Infrastructure Development
+							Furniture And Decor Selection
 						</h3>
 						<p class="text-gray-600 mb-4">
-							We build essential infrastructure including roads, bridges, and
-							utilities that support community growth and development.
+							Our team curates furniture, artwork, and decorative elements that elevate your space —
+							perfectly matching your vision, lifestyle, and interior theme.
 						</p>
 						<button class="text-primary font-medium flex items-center service-expand-btn"
 							data-target="service-4-details">
@@ -392,19 +426,19 @@
 							<ul class="text-gray-600 space-y-2">
 								<li class="flex items-start">
 									<i class="ri-check-line text-primary mt-1 mr-2"></i>
-									<span>Road and highway construction</span>
+									<span>Custom furniture sourcing and placement</span>
 								</li>
 								<li class="flex items-start">
 									<i class="ri-check-line text-primary mt-1 mr-2"></i>
-									<span>Bridge and tunnel projects</span>
+									<span>Art and wall decor selection</span>
 								</li>
 								<li class="flex items-start">
 									<i class="ri-check-line text-primary mt-1 mr-2"></i>
-									<span>Water and sewer systems</span>
+									<span>Textiles, rugs, and soft furnishings</span>
 								</li>
 								<li class="flex items-start">
 									<i class="ri-check-line text-primary mt-1 mr-2"></i>
-									<span>Public facilities and parks</span>
+									<span>Lighting and accessory styling</span>
 								</li>
 							</ul>
 						</div>
@@ -413,18 +447,18 @@
 				<!-- Service 5 -->
 				<div
 					class="service-card bg-gray-50 rounded-lg shadow-md overflow-hidden transition-transform duration-300">
-					<img src="./assets/services/Villa.webp" alt="Green Building"
+					<img src="./assets/services/Villa.webp" alt="Space Planning & Optimization" loading="lazy"
 						class="w-full h-48 object-cover object-top" />
 					<div class="p-6">
 						<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
 							<i class="ri-leaf-line ri-lg text-primary"></i>
 						</div>
 						<h3 class="text-xl font-semibold text-gray-800 mb-3">
-							Green Building
+							Space Planning & Optimization
 						</h3>
 						<p class="text-gray-600 mb-4">
-							Sustainable construction solutions that minimize environmental
-							impact while maximizing energy efficiency and comfort.
+							Maximize functionality with smart, strategic layouts that improve flow, storage, and
+							usability — ideal for both compact and large-scale spaces.
 						</p>
 						<button class="text-primary font-medium flex items-center service-expand-btn"
 							data-target="service-5-details">
@@ -434,19 +468,19 @@
 							<ul class="text-gray-600 space-y-2">
 								<li class="flex items-start">
 									<i class="ri-check-line text-primary mt-1 mr-2"></i>
-									<span>LEED-certified construction</span>
+									<span>Efficient furniture arrangement</span>
 								</li>
 								<li class="flex items-start">
 									<i class="ri-check-line text-primary mt-1 mr-2"></i>
-									<span>Energy-efficient building design</span>
+									<span>Traffic flow and zoning strategies</span>
 								</li>
 								<li class="flex items-start">
 									<i class="ri-check-line text-primary mt-1 mr-2"></i>
-									<span>Solar and renewable energy integration</span>
+									<span>Storage and multifunctional space planning</span>
 								</li>
 								<li class="flex items-start">
 									<i class="ri-check-line text-primary mt-1 mr-2"></i>
-									<span>Sustainable material sourcing</span>
+									<span>Open-concept and small space solutions</span>
 								</li>
 							</ul>
 						</div>
@@ -455,18 +489,18 @@
 				<!-- Service 6 -->
 				<div
 					class="service-card bg-gray-50 rounded-lg shadow-md overflow-hidden transition-transform duration-300">
-					<img src="./assets/services/Villa.webp" alt="Project Management"
+					<img src="./assets/services/image-6.webp" alt="Home Staging Services" loading="lazy"
 						class="w-full h-48 object-cover object-top" />
 					<div class="p-6">
 						<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
 							<i class="ri-calendar-check-line ri-lg text-primary"></i>
 						</div>
 						<h3 class="text-xl font-semibold text-gray-800 mb-3">
-							Project Management
+							Home Staging Services
 						</h3>
 						<p class="text-gray-600 mb-4">
-							Comprehensive project management services ensuring your
-							construction project is completed on time and within budget.
+							We transform lived-in homes into market-ready spaces that attract buyers, using strategic
+							styling and temporary furnishings.
 						</p>
 						<button class="text-primary font-medium flex items-center service-expand-btn"
 							data-target="service-6-details">
@@ -476,19 +510,19 @@
 							<ul class="text-gray-600 space-y-2">
 								<li class="flex items-start">
 									<i class="ri-check-line text-primary mt-1 mr-2"></i>
-									<span>Construction planning and scheduling</span>
+									<span>Furniture and decor rental for staging</span>
 								</li>
 								<li class="flex items-start">
 									<i class="ri-check-line text-primary mt-1 mr-2"></i>
-									<span>Budget development and management</span>
+									<span>Neutral styling to appeal to buyers</span>
 								</li>
 								<li class="flex items-start">
 									<i class="ri-check-line text-primary mt-1 mr-2"></i>
-									<span>Quality control and assurance</span>
+									<span>Decluttering and space optimization</span>
 								</li>
 								<li class="flex items-start">
 									<i class="ri-check-line text-primary mt-1 mr-2"></i>
-									<span>Risk assessment and mitigation</span>
+									<span>Pre-listing photo shoot preparation</span>
 								</li>
 							</ul>
 						</div>
@@ -497,6 +531,7 @@
 			</div>
 		</div>
 	</section>
+
 	<!-- Projects Section -->
 	<section id="projects" class="py-20 bg-gray-50">
 		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
@@ -545,12 +580,13 @@
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
 						<h3 class="text-xl font-semibold text-white mb-2">
-							Oceanview Luxury Residence
+							Skyline Hill Villa
 						</h3>
 						<p class="text-white/90 mb-4">
-							A custom-built 6,500 sq ft luxury home featuring sustainable
-							materials and smart home technology.
+							A contemporary hillside residence with panoramic city views, open-concept living, and custom
+							interior finishes.
 						</p>
+
 						<div class="flex items-center">
 							<span class="bg-white/20 text-white text-sm px-3 py-1 rounded-full mr-2">Residential</span>
 							<button
@@ -569,11 +605,11 @@
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
 						<h3 class="text-xl font-semibold text-white mb-2">
-							Horizon Corporate Center
+							Aurora Business Tower
 						</h3>
 						<p class="text-white/90 mb-4">
-							A 12-story LEED Gold certified office building with
-							state-of-the-art amenities and sustainable design.
+							A modern commercial hub with coworking floors, private offices, and energy-efficient
+							architecture in a prime location.
 						</p>
 						<div class="flex items-center">
 							<span class="bg-white/20 text-white text-sm px-3 py-1 rounded-full mr-2">Commercial</span>
@@ -593,12 +629,13 @@
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
 						<h3 class="text-xl font-semibold text-white mb-2">
-							Riverfront Bridge Project
+							Central Transit Station
 						</h3>
 						<p class="text-white/90 mb-4">
-							A 750-foot cable-stayed bridge connecting two communities with
-							pedestrian walkways and bike lanes.
+							A multi-modal public transportation terminal integrating bus, rail, and pedestrian access
+							with a modern urban design.
 						</p>
+
 						<div class="flex items-center">
 							<span
 								class="bg-white/20 text-white text-sm px-3 py-1 rounded-full mr-2">Infrastructure</span>
@@ -618,11 +655,11 @@
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
 						<h3 class="text-xl font-semibold text-white mb-2">
-							Parkside Shopping Plaza
+							Elmwood Retail Arcade
 						</h3>
 						<p class="text-white/90 mb-4">
-							A 125,000 sq ft open-air retail center featuring 35 stores,
-							restaurants, and entertainment venues.
+							An urban shopping arcade blending indoor boutiques and cafés with natural lighting and
+							sustainable materials.
 						</p>
 						<div class="flex items-center">
 							<span class="bg-white/20 text-white text-sm px-3 py-1 rounded-full mr-2">Commercial</span>
@@ -642,12 +679,13 @@
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
 						<h3 class="text-xl font-semibold text-white mb-2">
-							The Residences at Westpark
+							Havenwood Residences
 						</h3>
 						<p class="text-white/90 mb-4">
-							A 200-unit luxury apartment complex with resort-style amenities
-							and energy-efficient design.
+							A gated residential community with 150 modern townhomes, landscaped gardens, and
+							community-focused design.
 						</p>
+
 						<div class="flex items-center">
 							<span class="bg-white/20 text-white text-sm px-3 py-1 rounded-full mr-2">Residential</span>
 							<button
@@ -666,12 +704,13 @@
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
 						<h3 class="text-xl font-semibold text-white mb-2">
-							Riverside Community Park
+							Greenfield Water Treatment Plant
 						</h3>
 						<p class="text-white/90 mb-4">
-							A 25-acre public park featuring sports facilities, walking
-							trails, and sustainable landscaping.
+							A sustainable facility engineered for clean water access, energy efficiency, and regional
+							environmental impact.
 						</p>
+
 						<div class="flex items-center">
 							<span
 								class="bg-white/20 text-white text-sm px-3 py-1 rounded-full mr-2">Infrastructure</span>
@@ -692,6 +731,7 @@
 			</div>
 		</div>
 	</section>
+
 	<!-- Project Modal -->
 	<div class="fixed inset-0 bg-black/70 z-50 hidden items-center justify-center" id="project-modal">
 		<div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto mx-4">
@@ -707,6 +747,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- Testimonials Section -->
 	<section id="testimonials" class="py-20 bg-white">
 		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
@@ -910,183 +951,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- Contact Section -->
-	<section id="contact" class="py-20 bg-gray-50">
-		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
-			<div class="text-center mb-16">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-					Contact Us
-				</h2>
-				<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
-				<p class="text-gray-600 max-w-3xl mx-auto">
-					Ready to start your construction project? Get in touch with our team
-					for a consultation or quote.
-				</p>
-			</div>
-			<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-				<!-- Contact Form -->
-				<div class="bg-white rounded-lg shadow-md p-8">
-					<h3 class="text-2xl font-semibold text-gray-800 mb-6">
-						Send Us a Message
-					</h3>
-					<form id="contact-form">
-						<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-							<div>
-								<label for="name" class="block text-gray-700 mb-2">Full Name</label>
-								<input type="text" id="name"
-									class="w-full px-4 py-3 rounded border-gray-300 border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors"
-									placeholder="Your name" />
-							</div>
-							<div>
-								<label for="email" class="block text-gray-700 mb-2">Email Address</label>
-								<input type="email" id="email"
-									class="w-full px-4 py-3 rounded border-gray-300 border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors"
-									placeholder="Your email" />
-							</div>
-						</div>
-						<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-							<div>
-								<label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
-								<input type="tel" id="phone"
-									class="w-full px-4 py-3 rounded border-gray-300 border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors"
-									placeholder="Your phone" />
-							</div>
-							<div>
-								<label for="project-type" class="block text-gray-700 mb-2">Project Type</label>
-								<div class="relative">
-									<select id="project-type"
-										class="w-full px-4 py-3 rounded border-gray-300 border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors appearance-none pr-8">
-										<option value="" selected disabled>
-											Select project type
-										</option>
-										<option value="residential">
-											Residential Construction
-										</option>
-										<option value="commercial">
-											Commercial Construction
-										</option>
-										<option value="renovation">Renovation</option>
-										<option value="infrastructure">Infrastructure</option>
-										<option value="other">Other</option>
-									</select>
-									<div
-										class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
-										<i class="ri-arrow-down-s-line text-gray-500"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="mb-6">
-							<label for="message" class="block text-gray-700 mb-2">Message</label>
-							<textarea id="message" rows="5"
-								class="w-full px-4 py-3 rounded border-gray-300 border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors"
-								placeholder="Tell us about your project"></textarea>
-						</div>
-						<div class="mb-6">
-							<label class="custom-checkbox">
-								<input type="checkbox" id="consent" />
-								<span class="checkmark mr-3"></span>
-								<span class="text-gray-700">I agree to the privacy policy and consent to being
-									contacted about my inquiry.</span>
-							</label>
-						</div>
-						<button type="submit"
-							class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors w-full md:w-auto">
-							Send Message
-						</button>
-					</form>
-				</div>
-				<!-- Contact Information -->
-				<div>
-					<div class="bg-white rounded-lg shadow-md p-8 mb-8">
-						<h3 class="text-2xl font-semibold text-gray-800 mb-6">
-							Contact Information
-						</h3>
-						<div class="space-y-6">
-							<div class="flex items-start">
-								<div
-									class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 mt-1">
-									<i class="ri-map-pin-line text-primary"></i>
-								</div>
-								<div>
-									<h4 class="font-medium text-gray-800 mb-1">
-										Office Address
-									</h4>
-									<p class="text-gray-600">
-										Vijaynagar<br />Hassan 573201
-									</p>
-								</div>
-							</div>
-							<div class="flex items-start">
-								<div
-									class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 mt-1">
-									<i class="ri-phone-line text-primary"></i>
-								</div>
-								<div>
-									<h4 class="font-medium text-gray-800 mb-1">Phone Number</h4>
-									<p class="text-gray-600">8050761016</p>
-								</div>
-							</div>
-							<div class="flex items-start">
-								<div
-									class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 mt-1">
-									<i class="ri-mail-line text-primary"></i>
-								</div>
-								<div>
-									<h4 class="font-medium text-gray-800 mb-1">
-										Email Address
-									</h4>
-									<p class="text-gray-600">info@ndconstrctions.in</p>
-								</div>
-							</div>
-							<div class="flex items-start">
-								<div
-									class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 mt-1">
-									<i class="ri-time-line text-primary"></i>
-								</div>
-								<div>
-									<h4 class="font-medium text-gray-800 mb-1">
-										Working Hours
-									</h4>
-									<p class="text-gray-600">
-										Monday - Friday: 8:00 AM - 6:00 PM
-									</p>
-									<p class="text-gray-600">Saturday: 9:00 AM - 2:00 PM</p>
-								</div>
-							</div>
-						</div>
-						<div class="mt-8">
-							<h4 class="font-medium text-gray-800 mb-4">Connect With Us</h4>
-							<div class="flex space-x-4">
-								<a href="#"
-									class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
-									<i class="ri-facebook-fill"></i>
-								</a>
-								<a href="#"
-									class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
-									<i class="ri-twitter-fill"></i>
-								</a>
-								<a href="#"
-									class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
-									<i class="ri-linkedin-fill"></i>
-								</a>
-								<a href="#"
-									class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
-									<i class="ri-instagram-line"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- Map -->
-					<div class="bg-white rounded-lg shadow-md p-8 h-64 relative overflow-hidden">
-						<div class="absolute inset-0 bg-cover bg-center"
-							style="background-image: url('./assets/map.webp');">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+
 	<!-- CTA Section -->
 	<section class="py-20 bg-primary">
 		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32 text-center">
@@ -1098,17 +963,19 @@
 				vision to life with quality craftsmanship and professional service.
 			</p>
 			<div class="flex flex-wrap justify-center gap-4">
-				<button
+				<a href="tel:+918050761016"
 					class="bg-white text-primary px-6 py-3 !rounded-button whitespace-nowrap hover:bg-gray-100 transition-colors text-lg font-medium">
-					Get a Free Quote
-				</button>
-				<button
+					Call Now
+				</a>
+
+				<a href="/contact-us"
 					class="bg-transparent border-2 border-white text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-white/10 transition-colors text-lg font-medium">
 					Contact Us
-				</button>
+				</a>
 			</div>
 		</div>
 	</section>
+
 	<!-- Footer -->
 	<footer id="footer" class="bg-gray-900 text-white pt-16 pb-8">
 	</footer>

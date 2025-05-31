@@ -93,9 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Oceanview Luxury Residence",
             category: "Residential",
             images: [
-                "https://readdy.ai/api/search-image?query=A%20luxurious%20modern%20home%20with%20ocean%20views%2C%20featuring%20contemporary%20architecture%20with%20large%20windows%2C%20open%20spaces%2C%20and%20premium%20finishes.%20The%20image%20shows%20the%20completed%20residence%20with%20beautiful%20landscaping%20and%20outdoor%20living%20areas%2C%20highlighting%20the%20high-end%20residential%20construction%20with%20attention%20to%20detail%20and%20quality%20craftsmanship.&width=800&height=500&seq=20&orientation=landscape",
-                "https://readdy.ai/api/search-image?query=Interior%20of%20a%20luxury%20modern%20home%20showing%20an%20open%20concept%20living%20space%20with%20high%20ceilings%2C%20premium%20finishes%2C%20and%20large%20windows%20with%20ocean%20views.%20The%20image%20displays%20elegant%20furnishings%2C%20custom%20cabinetry%2C%20and%20high-end%20materials%20that%20showcase%20exceptional%20residential%20construction%20quality.&width=800&height=500&seq=21&orientation=landscape",
-                "https://readdy.ai/api/search-image?query=Modern%20luxury%20home%20kitchen%20with%20premium%20appliances%2C%20custom%20cabinetry%2C%20and%20high-end%20finishes.%20The%20image%20shows%20a%20spacious%2C%20well-designed%20cooking%20and%20dining%20space%20with%20island%2C%20highlighting%20the%20quality%20craftsmanship%20in%20residential%20construction.&width=800&height=500&seq=22&orientation=landscape",
+                "./assets/interiors/image-1.png",
             ],
             description:
                 "This 6,500 square foot luxury residence features 5 bedrooms, 6.5 bathrooms, and panoramic ocean views. The project incorporated sustainable building practices, energy-efficient systems, and smart home technology throughout. Custom features include a chef's kitchen with premium appliances, a home theater, wine cellar, and an infinity pool overlooking the ocean.",
@@ -108,9 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Horizon Corporate Center",
             category: "Commercial",
             images: [
-                "https://readdy.ai/api/search-image?query=A%20modern%2012-story%20commercial%20office%20building%20with%20glass%20facade%2C%20contemporary%20architecture%2C%20and%20professional%20landscaping.%20The%20image%20shows%20the%20completed%20corporate%20headquarters%20with%20distinctive%20design%20elements%2C%20highlighting%20the%20scale%20and%20quality%20of%20commercial%20construction.&width=800&height=500&seq=23&orientation=landscape",
-                "https://readdy.ai/api/search-image?query=Modern%20corporate%20office%20lobby%20with%20high%20ceilings%2C%20reception%20desk%2C%20and%20contemporary%20design%20elements.%20The%20image%20shows%20a%20professional%2C%20welcoming%20entrance%20space%20with%20quality%20materials%20and%20finishes%20that%20represent%20excellence%20in%20commercial%20construction.&width=800&height=500&seq=24&orientation=landscape",
-                "https://readdy.ai/api/search-image?query=Contemporary%20office%20interior%20with%20open%20workspace%20design%2C%20modern%20furnishings%2C%20and%20collaborative%20areas.%20The%20image%20shows%20a%20professional%20working%20environment%20with%20quality%20finishes%2C%20good%20lighting%2C%20and%20thoughtful%20space%20planning%20that%20represents%20excellence%20in%20commercial%20construction.&width=800&height=500&seq=25&orientation=landscape",
+                "./assets/interiors/image-1.png",
             ],
             description:
                 "The Horizon Corporate Center is a 12-story, 250,000 square foot LEED Gold certified office building. The project features a striking glass facade, energy-efficient systems, and state-of-the-art amenities including a rooftop garden, fitness center, and conference facilities. The building incorporates sustainable design elements such as rainwater harvesting, solar panels, and high-efficiency HVAC systems.",
@@ -123,9 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Riverfront Bridge Project",
             category: "Infrastructure",
             images: [
-                "https://readdy.ai/api/search-image?query=A%20modern%20cable-stayed%20bridge%20spanning%20across%20a%20river%20with%20pedestrian%20walkways%20and%20bike%20lanes.%20The%20image%20shows%20the%20completed%20infrastructure%20project%20with%20impressive%20engineering%20features%20and%20architectural%20design%2C%20highlighting%20excellence%20in%20bridge%20construction.&width=800&height=500&seq=26&orientation=landscape",
-                "https://readdy.ai/api/search-image?query=Close-up%20view%20of%20a%20modern%20bridge%20showing%20structural%20details%2C%20pedestrian%20walkways%2C%20and%20architectural%20lighting%20features.%20The%20image%20displays%20the%20quality%20engineering%20and%20construction%20of%20the%20infrastructure%20project%20with%20attention%20to%20both%20function%20and%20design.&width=800&height=500&seq=27&orientation=landscape",
-                "https://readdy.ai/api/search-image?query=Aerial%20view%20of%20a%20cable-stayed%20bridge%20crossing%20a%20river%20and%20connecting%20communities%2C%20showing%20the%20full%20span%20and%20surrounding%20landscape.%20The%20image%20displays%20the%20scale%20and%20impact%20of%20the%20infrastructure%20project%20with%20both%20the%20bridge%20and%20its%20integration%20with%20surrounding%20areas%20visible.&width=800&height=500&seq=28&orientation=landscape",
+                "./assets/interiors/image-1.png",
             ],
             description:
                 "This 750-foot cable-stayed bridge connects two previously separated communities across the river. The project includes four vehicle lanes, dedicated bike lanes, and pedestrian walkways with scenic overlooks. The bridge features architectural lighting, public art installations, and viewing platforms. The design prioritized environmental protection of the river ecosystem during construction.",
@@ -138,9 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Parkside Shopping Plaza",
             category: "Commercial",
             images: [
-                "https://readdy.ai/api/search-image?query=A%20modern%20open-air%20retail%20shopping%20center%20with%20attractive%20storefronts%2C%20pedestrian%20walkways%2C%20and%20landscaped%20areas.%20The%20image%20shows%20a%20completed%20commercial%20development%20with%20multiple%20retail%20spaces%2C%20restaurants%2C%20and%20entertainment%20venues%2C%20highlighting%20quality%20commercial%20construction.&width=800&height=500&seq=29&orientation=landscape",
-                "https://readdy.ai/api/search-image?query=Interior%20view%20of%20a%20modern%20shopping%20mall%20showing%20retail%20spaces%2C%20common%20areas%2C%20and%20architectural%20features.%20The%20image%20displays%20quality%20finishes%2C%20good%20lighting%2C%20and%20thoughtful%20design%20that%20creates%20an%20inviting%20shopping%20environment.&width=800&height=500&seq=30&orientation=landscape",
-                "https://readdy.ai/api/search-image?query=Outdoor%20plaza%20area%20of%20a%20shopping%20center%20with%20seating%2C%20landscaping%2C%20and%20gathering%20spaces.%20The%20image%20shows%20a%20well-designed%20community%20space%20that%20enhances%20the%20retail%20environment%20with%20attention%20to%20both%20function%20and%20aesthetics.&width=800&height=500&seq=31&orientation=landscape",
+                "./assets/interiors/image-1.png",
             ],
             description:
                 "Parkside Shopping Plaza is a 125,000 square foot open-air retail center featuring 35 stores, restaurants, and entertainment venues. The project includes a central plaza with water features, outdoor seating areas, and event space. The design incorporates sustainable elements such as permeable paving, native landscaping, and energy-efficient lighting throughout the property.",
@@ -153,9 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "The Residences at Westpark",
             category: "Residential",
             images: [
-                "https://readdy.ai/api/search-image?query=A%20modern%20luxury%20apartment%20complex%20with%20multiple%20buildings%2C%20landscaped%20grounds%2C%20and%20resort-style%20amenities.%20The%20image%20shows%20a%20completed%20multi-family%20residential%20development%20with%20attractive%20architecture%20and%20outdoor%20spaces%2C%20highlighting%20quality%20in%20multi-family%20construction.&width=800&height=500&seq=32&orientation=landscape",
-                "https://readdy.ai/api/search-image?query=Interior%20of%20a%20modern%20luxury%20apartment%20showing%20open%20concept%20living%20space%2C%20kitchen%2C%20and%20high-end%20finishes.%20The%20image%20displays%20quality%20materials%2C%20thoughtful%20design%2C%20and%20attention%20to%20detail%20in%20multi-family%20residential%20construction.&width=800&height=500&seq=33&orientation=landscape",
-                "https://readdy.ai/api/search-image?query=Resort-style%20pool%20area%20of%20a%20luxury%20apartment%20complex%20with%20lounging%20areas%2C%20cabanas%2C%20and%20landscaping.%20The%20image%20shows%20the%20community%20amenities%20that%20enhance%20residential%20living%20with%20attention%20to%20both%20function%20and%20lifestyle%20features.&width=800&height=500&seq=34&orientation=landscape",
+                "./assets/interiors/image-1.png",
             ],
             description:
                 "The Residences at Westpark is a 200-unit luxury apartment complex featuring a mix of one, two, and three-bedroom units. The project includes resort-style amenities such as a pool with cabanas, fitness center, clubhouse, and dog park. The buildings incorporate energy-efficient design, smart home features, and high-end finishes throughout. The development also includes walking trails and preserved green space.",
@@ -168,9 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Riverside Community Park",
             category: "Infrastructure",
             images: [
-                "https://readdy.ai/api/search-image?query=A%20modern%20public%20park%20with%20walking%20paths%2C%20recreational%20areas%2C%20and%20landscaped%20green%20spaces.%20The%20image%20shows%20a%20completed%20community%20infrastructure%20project%20with%20sports%20facilities%2C%20seating%20areas%2C%20and%20natural%20elements%2C%20highlighting%20quality%20in%20public%20space%20development.&width=800&height=500&seq=35&orientation=landscape",
-                "https://readdy.ai/api/search-image?query=Sports%20facilities%20in%20a%20public%20park%20showing%20courts%2C%20fields%2C%20and%20recreational%20equipment.%20The%20image%20displays%20well-designed%20active%20spaces%20that%20serve%20community%20needs%20with%20quality%20construction%20and%20attention%20to%20durability.&width=800&height=500&seq=36&orientation=landscape",
-                "https://readdy.ai/api/search-image?query=Nature%20trail%20and%20landscaped%20areas%20in%20a%20public%20park%20showing%20walking%20paths%2C%20native%20plantings%2C%20and%20seating%20areas.%20The%20image%20shows%20the%20integration%20of%20natural%20and%20built%20elements%20that%20create%20a%20sustainable%20community%20space.&width=800&height=500&seq=37&orientation=landscape",
+                "./assets/interiors/image-1.png",
             ],
             description:
                 "Riverside Community Park is a 25-acre public recreation space featuring sports facilities, walking trails, and sustainable landscaping. The project includes baseball fields, basketball and tennis courts, a playground, picnic areas, and an amphitheater for community events. The park incorporates green infrastructure such as rain gardens, native plantings, and permeable surfaces to manage stormwater and enhance the natural environment.",
