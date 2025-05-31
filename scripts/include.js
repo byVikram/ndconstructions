@@ -48,9 +48,9 @@ window.addEventListener("load", () => {
 	const gifLoader = document.getElementById("gif-loader");
 	if (gifLoader) {
 		gifLoader.classList.add("fade-out");
-		setTimeout(() => {
-			gifLoader.remove(); // optional: remove from DOM after animation
-		}, 500); // match with your fade transition duration
+		// setTimeout(() => {
+		// 	gifLoader.remove(); // optional: remove from DOM after animation
+		// }, 500); // match with your fade transition duration
 	}
 });
 
