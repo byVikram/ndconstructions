@@ -5,39 +5,71 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>ND Constructions Interiors | Interior Design & Renovation in Hassan, Karnataka</title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="./assets/favicon.webp" type="image/x-icon" />
+
+	<!-- Preload Key Resources -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-		rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+	<!-- Fonts: Non-blocking -->
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" media="print" onload="this.media='all'" />
+	<noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" />
+	</noscript>
+
+	<!-- Remix Icons: Non-blocking -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" media="print" onload="this.media='all'" />
+	<noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+	</noscript>
+
+	<!-- Tailwind (prefer compiled in production) -->
 	<script src="https://cdn.tailwindcss.com/3.4.16"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
-	<!-- Import script.js -->
-	<script src="./scripts/tailwind-config.js"></script>
-
 	<link rel="stylesheet" href="./styles/styles.css" />
-	<link rel="stylesheet" href="./styles/interiors.css" />
+	<script defer src="./scripts/tailwind-config.js"></script>
 
-	<!-- Meta Description -->
-	<meta name="description"
-		content="ND Constructions offers expert interior design and renovation services in Hassan, Karnataka. From residential interiors to commercial spaces, we create beautiful, functional designs tailored to your lifestyle and needs.">
+	<!-- SEO Meta -->
+	<meta name="description" content="ND Constructions Interiors offers modern, elegant interior design and renovation services in Hassan, Karnataka. We transform spaces with creativity and function." />
+	<meta name="keywords" content="interior design Hassan, renovation Hassan, ND Constructions Interiors, modular kitchen Hassan, false ceiling Hassan, residential interiors Karnataka, commercial interiors Hassan" />
+	<meta name="author" content="ND Constructions" />
+	<meta name="robots" content="index, follow" />
+	<meta name="language" content="English" />
 
-	<!-- Meta Keywords -->
-	<meta name="keywords"
-		content="constructions in hassan, constructions in karnataka, interior design Hassan, interior decorators Hassan, home interiors Karnataka, office interiors Hassan, renovation services Hassan, modular kitchen Hassan, false ceiling Hassan, residential interiors Hassan, commercial interiors Karnataka, ND Constructions interiors, interior design company Hassan, interior solutions Karnataka, interior contractors Hassan">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.ndconstructions.in/interiors/" />
+	<meta property="og:title" content="ND Constructions Interiors | Interior Design Experts in Hassan" />
+	<meta property="og:description" content="We deliver high-quality interior design and renovation solutions in Hassan, Karnataka — tailored to your style and needs." />
+	<meta property="og:image" content="https://www.ndconstructions.in/assets/og-image.jpg" />
 
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content="https://www.ndconstructions.in/interiors/" />
+	<meta name="twitter:title" content="ND Constructions Interiors | Interior Design Hassan" />
+	<meta name="twitter:description" content="Transform your home or office with ND Constructions Interiors. Elegant design, smart functionality — right here in Hassan." />
+	<meta name="twitter:image" content="https://www.ndconstructions.in/assets/og-image.jpg" />
+
+	<!-- Canonical URL -->
 	<link rel="canonical" href="https://www.ndconstructions.in/interiors/" />
 
-	<!-- Schema.org JSON-LD Structured Data -->
+	<!-- JSON-LD Schema Markup -->
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
 		"@type": "LocalBusiness",
 		"name": "ND Constructions - Interiors",
-		"url": "https://ndconstructions.com/interiors",
-		"logo": "https://ndconstructions.com/assets/logo.png",
-		"description": "ND Constructions provides professional interior design and renovation services in Hassan, Karnataka, including residential and commercial spaces.",
+		"url": "https://www.ndconstructions.in/interiors/",
+		"logo": "https://www.ndconstructions.in/assets/logo.png",
+		"image": "https://www.ndconstructions.in/assets/og-image.jpg",
+		"description": "ND Constructions offers expert interior design and renovation services in Hassan, Karnataka, transforming residential and commercial spaces.",
+		"telephone": "+918050761016",
+		"email": "info@ndconstructions.com",
 		"address": {
 			"@type": "PostalAddress",
 			"streetAddress": "Vijaynagar",
@@ -46,28 +78,73 @@
 			"postalCode": "573201",
 			"addressCountry": "IN"
 		},
-		"contactPoint": {
-			"@type": "ContactPoint",
-			"telephone": "+91-9876543210",
-			"contactType": "Customer Service",
-			"areaServed": "Hassan, Karnataka",
-			"availableLanguage": "English, Kannada"
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 13.0072,
+			"longitude": 76.0963
 		},
-		"sameAs": [
-			"https://ndconstructions.com",
-			"https://www.instagram.com/yourusername", 
-			"https://www.facebook.com/yourusername"
+		"founder": {
+			"@type": "Person",
+			"name": "Darshan HG"
+		},
+		"foundingDate": "2025-01-01",
+		"foundingLocation": {
+			"@type": "Place",
+			"name": "Hassan, Karnataka"
+		},
+		"makesOffer": [
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Residential Interior Design"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Commercial Interior Design"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Renovation Services"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Furniture And Decor Selection"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Space Planning & Optimization"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Home Staging Services"
+				}
+			}
 		]
 	}
 	</script>
-
-
 </head>
+
 
 <body class="bg-gray-50">
 	<div id="gif-loader"></div>
 	<!-- Navigation -->
-	<header id="header" class="fixed w-full bg-white shadow-md z-50">
+	<header id="header" class="sticky w-full bg-white shadow-md z-50">
 	</header>
 	<!-- Placeholder where the banner will load -->
 
@@ -75,7 +152,7 @@
 
 
 	<!-- Interiors Section -->
-	<section id="interiors" class="py-20 pt-20 bg-gray-50">
+	<section id="interiors" class="bg-gray-50">
 		<div id="banner"></div>
 		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
 			<div class="text-center mb-16">
@@ -318,8 +395,8 @@
 		});
 	</script>
 
-	<script src="./scripts/include.js"></script>
-	<script src="./scripts/about-us-js"></script>
+	<script src="./scripts/include.js" defer></script>
+	<script src="./scripts/about-us-js" defer></script>
 </body>
 
 </html>

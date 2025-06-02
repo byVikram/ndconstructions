@@ -4,41 +4,80 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>About Us | ND Constructions – Leading Builders in Hassan, Karnataka</title>
+	<title>About Constructions Interiors | Interior Design & Renovation in Hassan, Karnataka</title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="./assets/favicon.webp" type="image/x-icon" />
+
+	<!-- Preload Key Resources -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-		rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+	<!-- Fonts: Non-blocking -->
+	<link rel="preload" as="style"
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" media="print"
+		onload="this.media='all'" />
+	<noscript>
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" />
+	</noscript>
+
+	<!-- Remix Icons: Non-blocking -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" media="print"
+		onload="this.media='all'" />
+	<noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+	</noscript>
+
+	<!-- Tailwind (prefer compiled in production) -->
 	<script src="https://cdn.tailwindcss.com/3.4.16"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
-	<!-- Import script.js -->
-	<script src="./scripts/tailwind-config.js"></script>
-
 	<link rel="stylesheet" href="./styles/styles.css" />
-	<link rel="stylesheet" href="./styles/about-us.css" />
+	<script defer src="./scripts/tailwind-config.js"></script>
 
-	<!-- Meta Description -->
+	<!-- SEO Meta -->
 	<meta name="description"
-		content="Learn about ND Constructions, a leading construction company in Hassan, Karnataka. With years of experience, we specialize in delivering quality residential, commercial, and infrastructure projects with a commitment to excellence.">
-
-	<!-- Meta Keywords -->
+		content="Learn more about ND Constructions – a leading construction and interior design firm in Hassan, Karnataka. We are committed to quality, innovation, and customer satisfaction." />
 	<meta name="keywords"
-		content="constructions in hassan, constructions in karnataka, about ND Constructions, construction company Hassan, building contractors Karnataka, leading builders Hassan, experienced civil contractors Hassan, construction expertise Hassan, about our team, construction company history Hassan, Hassan builders profile">
+		content="About ND Constructions, construction company Hassan, interior design firm Hassan, team ND Constructions, Hassan builders, Karnataka construction company, trusted construction firm Hassan" />
+	<meta name="author" content="ND Constructions" />
+	<meta name="robots" content="index, follow" />
+	<meta name="language" content="English" />
 
-	<link rel="canonical" href="https://www.ndconstructions.in/about-us" />
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.ndconstructions.in/about-us/" />
+	<meta property="og:title" content="About ND Constructions | Trusted Builders & Designers in Hassan" />
+	<meta property="og:description"
+		content="ND Constructions has been transforming spaces in Hassan with a focus on quality construction and interior design. Discover our journey, vision, and leadership." />
+	<meta property="og:image" content="https://www.ndconstructions.in/assets/og-image.jpg" />
 
-	<!-- Schema.org JSON-LD Structured Data -->
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content="https://www.ndconstructions.in/about-us/" />
+	<meta name="twitter:title" content="About ND Constructions | Interior & Construction Experts in Hassan" />
+	<meta name="twitter:description"
+		content="We’re ND Constructions – dedicated to excellence in construction and interior design across Hassan and Karnataka. Meet our team and story." />
+	<meta name="twitter:image" content="https://www.ndconstructions.in/assets/og-image.jpg" />
+
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.ndconstructions.in/about-us/" />
+
+	<!-- JSON-LD Schema Markup -->
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
 		"@type": "LocalBusiness",
-		"name": "ND Constructions",
-		"url": "https://ndconstructions.com",
-		"logo": "https://ndconstructions.com/assets/logo.png",
-		"image": "https://ndconstructions.com/assets/office-building.jpg",
-		"description": "ND Constructions, founded by Darshan HG, is a construction company committed to quality and excellence in residential, commercial, and infrastructure development.",
+		"name": "ND Constructions - Interiors",
+		"url": "https://www.ndconstructions.in/about-us/",
+		"logo": "https://www.ndconstructions.in/assets/og-image.jpg",
+		"image": "https://www.ndconstructions.in/assets/og-image.jpg",
+		"description": "ND Constructions offers expert interior design and renovation services in Hassan, Karnataka, transforming residential and commercial spaces.",
 		"telephone": "+918050761016",
 		"email": "info@ndconstructions.com",
 		"address": {
@@ -49,47 +88,80 @@
 			"postalCode": "573201",
 			"addressCountry": "IN"
 		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 13.0072,
+			"longitude": 76.0963
+		},
 		"founder": {
 			"@type": "Person",
-			"name": "Darshan HG",
-			"description": "Founder of ND Constructions, civil engineer and project leader with a vision for sustainable and efficient construction."
+			"name": "Darshan HG"
 		},
 		"foundingDate": "2025-01-01",
 		"foundingLocation": {
 			"@type": "Place",
 			"name": "Hassan, Karnataka"
 		},
-		"employee": [
+		"makesOffer": [
 			{
-			"@type": "Person",
-			"name": "Rajesh Kumar",
-			"jobTitle": "Project Manager"
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Residential Interior Design"
+				}
 			},
 			{
-			"@type": "Person",
-			"name": "Sneha R",
-			"jobTitle": "Lead Architect"
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Commercial Interior Design"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Renovation Services"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Furniture And Decor Selection"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Space Planning & Optimization"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Home Staging Services"
+				}
 			}
 		]
 	}
 	</script>
-
-
 </head>
 
 <body class="bg-gray-50">
 	<div id="gif-loader"></div>
 	<!-- Navigation -->
-	<header id="header" class="fixed w-full bg-white shadow-md z-50">
+	<header id="header" class="sticky w-full bg-white shadow-md z-50">
 	</header>
 	<!-- Placeholder where the banner will load -->
 
-
-
 	<!-- About Section -->
-	<section id="about" class="py-20 pt-20 bg-gray-50">
+	<section id="about">
 		<div id="banner"></div>
-		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
+		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32">	
+		<!-- <div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32 py-20 w-full"> -->
 			<div class="text-center mb-16">
 				<h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 pt-10 text-primary">
 					About Our Company
@@ -108,7 +180,7 @@
 				<div>
 					<h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Story</h3>
 					<p class="text-gray-600 mb-6">
-						Founded in 2000, ND Construction has grown from a small
+						Founded in 2023, ND Construction has grown from a small
 						local contractor to one of the region's most respected
 						construction companies. Our journey has been defined by our
 						unwavering commitment to quality, innovation, and client
@@ -134,10 +206,6 @@
 							building practices and exceptional craftsmanship.
 						</p>
 					</div>
-					<button
-						class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">
-						Learn More About Us
-					</button>
 				</div>
 			</div>
 			<!-- Timeline -->
@@ -156,7 +224,7 @@
 								class="hidden md:block absolute right-0 top-5 w-4 h-4 rounded-full bg-primary transform translate-x-1/2">
 							</div>
 							<div class="bg-white p-6 rounded-lg shadow-md">
-								<h4 class="text-xl font-semibold text-primary mb-2">2000</h4>
+								<h4 class="text-xl font-semibold text-primary mb-2">2023</h4>
 								<h5 class="text-lg font-medium text-gray-800 mb-2">
 									Company Founded
 								</h5>
@@ -171,73 +239,13 @@
 								class="hidden md:block absolute left-0 top-5 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2">
 							</div>
 							<div class="bg-white p-6 rounded-lg shadow-md">
-								<h4 class="text-xl font-semibold text-primary mb-2">2005</h4>
+								<h4 class="text-xl font-semibold text-primary mb-2">2023</h4>
 								<h5 class="text-lg font-medium text-gray-800 mb-2">
 									First Major Project
 								</h5>
 								<p class="text-gray-600">
 									Completed our first commercial high-rise building,
 									establishing our reputation for quality.
-								</p>
-							</div>
-						</div>
-						<div class="md:text-right md:pr-12 relative mt-8">
-							<div
-								class="hidden md:block absolute right-0 top-5 w-4 h-4 rounded-full bg-primary transform translate-x-1/2">
-							</div>
-							<div class="bg-white p-6 rounded-lg shadow-md">
-								<h4 class="text-xl font-semibold text-primary mb-2">2010</h4>
-								<h5 class="text-lg font-medium text-gray-800 mb-2">
-									Expansion Phase
-								</h5>
-								<p class="text-gray-600">
-									Expanded operations to three new states and doubled our
-									workforce to meet growing demand.
-								</p>
-							</div>
-						</div>
-						<div class="md:col-start-2 md:pl-12 relative mt-8">
-							<div
-								class="hidden md:block absolute left-0 top-5 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2">
-							</div>
-							<div class="bg-white p-6 rounded-lg shadow-md">
-								<h4 class="text-xl font-semibold text-primary mb-2">2015</h4>
-								<h5 class="text-lg font-medium text-gray-800 mb-2">
-									Sustainability Focus
-								</h5>
-								<p class="text-gray-600">
-									Adopted green building practices and earned LEED
-									certification for sustainable construction.
-								</p>
-							</div>
-						</div>
-						<div class="md:text-right md:pr-12 relative mt-8">
-							<div
-								class="hidden md:block absolute right-0 top-5 w-4 h-4 rounded-full bg-primary transform translate-x-1/2">
-							</div>
-							<div class="bg-white p-6 rounded-lg shadow-md">
-								<h4 class="text-xl font-semibold text-primary mb-2">2020</h4>
-								<h5 class="text-lg font-medium text-gray-800 mb-2">
-									Innovation Award
-								</h5>
-								<p class="text-gray-600">
-									Received industry recognition for innovative construction
-									techniques and technology integration.
-								</p>
-							</div>
-						</div>
-						<div class="md:col-start-2 md:pl-12 relative mt-8">
-							<div
-								class="hidden md:block absolute left-0 top-5 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2">
-							</div>
-							<div class="bg-white p-6 rounded-lg shadow-md">
-								<h4 class="text-xl font-semibold text-primary mb-2">2025</h4>
-								<h5 class="text-lg font-medium text-gray-800 mb-2">
-									Present Day
-								</h5>
-								<p class="text-gray-600">
-									Now a leading construction firm with over 85 employees and
-									350+ successful projects completed.
 								</p>
 							</div>
 						</div>
@@ -261,7 +269,7 @@
 		});
 	</script>
 
-	<script src="./scripts/include.js"></script>
+	<script src="./scripts/include.js" defer></script>
 </body>
 
 </html>
