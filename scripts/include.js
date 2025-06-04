@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 	// Load header and footer
 	Promise.all([
-		fetch("./components/gif-loader.html").then(res => res.text()),
-		fetch("./components/header.html").then(res => res.text()),
-		fetch("./components/footer.html").then(res => res.text())
+		fetch("/components/gif-loader.html").then(res => res.text()),
+		fetch("/components/header.html").then(res => res.text()),
+		fetch("/components/footer.html").then(res => res.text())
 	]).then(([loaderHTML, headerHTML, footerHTML]) => {
 		// Inject loader HTML into the DOM
 		document.getElementById("gif-loader").innerHTML = loaderHTML;
@@ -56,7 +56,7 @@ window.addEventListener("load", () => {
 
 
 function loadBanner(bannerData) {
-	fetch("./components/banner.html")
+	fetch("/components/banner.html")
 		.then(res => res.text())
 		.then(data => {
 			const bannerContainer = document.getElementById("banner");

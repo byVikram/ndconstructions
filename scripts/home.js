@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Oceanview Luxury Residence",
             category: "Residential",
             images: [
-                "./assets/interiors/image-1.png",
+                "/assets/interiors/image-1.png",
             ],
             description:
                 "This 6,500 square foot luxury residence features 5 bedrooms, 6.5 bathrooms, and panoramic ocean views. The project incorporated sustainable building practices, energy-efficient systems, and smart home technology throughout. Custom features include a chef's kitchen with premium appliances, a home theater, wine cellar, and an infinity pool overlooking the ocean.",
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Horizon Corporate Center",
             category: "Commercial",
             images: [
-                "./assets/interiors/image-1.png",
+                "/assets/interiors/image-1.png",
             ],
             description:
                 "The Horizon Corporate Center is a 12-story, 250,000 square foot LEED Gold certified office building. The project features a striking glass facade, energy-efficient systems, and state-of-the-art amenities including a rooftop garden, fitness center, and conference facilities. The building incorporates sustainable design elements such as rainwater harvesting, solar panels, and high-efficiency HVAC systems.",
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Riverfront Bridge Project",
             category: "Infrastructure",
             images: [
-                "./assets/interiors/image-1.png",
+                "/assets/interiors/image-1.png",
             ],
             description:
                 "This 750-foot cable-stayed bridge connects two previously separated communities across the river. The project includes four vehicle lanes, dedicated bike lanes, and pedestrian walkways with scenic overlooks. The bridge features architectural lighting, public art installations, and viewing platforms. The design prioritized environmental protection of the river ecosystem during construction.",
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Parkside Shopping Plaza",
             category: "Commercial",
             images: [
-                "./assets/interiors/image-1.png",
+                "/assets/interiors/image-1.png",
             ],
             description:
                 "Parkside Shopping Plaza is a 125,000 square foot open-air retail center featuring 35 stores, restaurants, and entertainment venues. The project includes a central plaza with water features, outdoor seating areas, and event space. The design incorporates sustainable elements such as permeable paving, native landscaping, and energy-efficient lighting throughout the property.",
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "The Residences at Westpark",
             category: "Residential",
             images: [
-                "./assets/interiors/image-1.png",
+                "/assets/interiors/image-1.png",
             ],
             description:
                 "The Residences at Westpark is a 200-unit luxury apartment complex featuring a mix of one, two, and three-bedroom units. The project includes resort-style amenities such as a pool with cabanas, fitness center, clubhouse, and dog park. The buildings incorporate energy-efficient design, smart home features, and high-end finishes throughout. The development also includes walking trails and preserved green space.",
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Riverside Community Park",
             category: "Infrastructure",
             images: [
-                "./assets/interiors/image-1.png",
+                "/assets/interiors/image-1.png",
             ],
             description:
                 "Riverside Community Park is a 25-acre public recreation space featuring sports facilities, walking trails, and sustainable landscaping. The project includes baseball fields, basketball and tennis courts, a playground, picnic areas, and an amphitheater for community events. The park incorporates green infrastructure such as rain gardens, native plantings, and permeable surfaces to manage stormwater and enhance the natural environment.",
