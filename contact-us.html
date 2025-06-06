@@ -159,17 +159,17 @@
                     <h3 class="text-2xl font-semibold text-gray-800 mb-6">
                         Send Us a Message
                     </h3>
-                    <form id="contact-form">
+                    <form id="contact-form" action="send-contact.php" method="POST">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label for="name" class="block text-gray-700 mb-2">Full Name</label>
-                                <input type="text" id="name"
+                                <input type="text" id="name" name="name"
                                     class="w-full px-4 py-3 rounded border-gray-300 border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors"
                                     placeholder="Your name" />
                             </div>
                             <div>
                                 <label for="email" class="block text-gray-700 mb-2">Email Address</label>
-                                <input type="email" id="email"
+                                <input type="email" id="email" name="email"
                                     class="w-full px-4 py-3 rounded border-gray-300 border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors"
                                     placeholder="Your email" />
                             </div>
@@ -177,14 +177,14 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
-                                <input type="tel" id="phone"
+                                <input type="tel" id="phone" name="phone"
                                     class="w-full px-4 py-3 rounded border-gray-300 border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors"
                                     placeholder="Your phone" />
                             </div>
                             <div>
                                 <label for="project-type" class="block text-gray-700 mb-2">Project Type</label>
                                 <div class="relative">
-                                    <select id="project-type"
+                                    <select id="project-type" name="project_type"
                                         class="w-full px-4 py-3 rounded border-gray-300 border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors appearance-none pr-8">
                                         <option value="" selected disabled>
                                             Select project type
@@ -208,13 +208,13 @@
                         </div>
                         <div class="mb-6">
                             <label for="message" class="block text-gray-700 mb-2">Message</label>
-                            <textarea id="message" rows="5"
+                            <textarea id="message" rows="5" name="message"
                                 class="w-full px-4 py-3 rounded border-gray-300 border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors"
                                 placeholder="Tell us about your project"></textarea>
                         </div>
                         <div class="mb-6">
                             <label class="custom-checkbox">
-                                <input type="checkbox" id="consent" />
+                                <input type="checkbox" id="consent" name="consent"/>
                                 <span class="checkmark mr-3"></span>
                                 <span class="text-gray-700">I agree to the privacy policy and consent to being
                                     contacted about my inquiry.</span>
@@ -255,6 +255,7 @@
                                 <div>
                                     <h4 class="font-medium text-gray-800 mb-1">Phone Number</h4>
                                     <p class="text-gray-600">8050761016</p>
+                                    <p class="text-gray-600">6366944711</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -333,13 +334,13 @@
             loadBanner({
                 title: "Get in Touch",
                 subtitle: "We’re here to answer your questions and connect with you.",
-                backgroundImage: "/assets/contact-us-banner.webp"
+                backgroundImage: "assets/contact-us-banner.webp"
             });
         });
     </script>
 
-    <script src="/scripts/include.js"></script>
-    <script src="/scripts/contact-us.js"></script>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/contact-us.js"></script>
 </body>
 
 </html>

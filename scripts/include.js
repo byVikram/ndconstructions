@@ -56,7 +56,7 @@ window.addEventListener("load", () => {
 
 
 function loadBanner(bannerData) {
-	fetch("/components/banner.html")
+	fetch("components/banner.html")
 		.then(res => res.text())
 		.then(data => {
 			const bannerContainer = document.getElementById("banner");
