@@ -7,7 +7,7 @@
     <title>Contact ND Constructions | Construction & Interior Experts in Hassan, Karnataka</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="/assets/favicon.webp" type="image/x-icon" />
+    <link rel="icon" href="assets/favicon.webp" type="image/x-icon" />
 
     <!-- Preload Key Resources -->
     <link rel="preload" as="style"
@@ -40,9 +40,9 @@
     <!-- Instead of this CDN: -->
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <!-- Use compiled Tailwind CSS and inline critical styles -->
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
 
-    <script defer src="/scripts/tailwind-config.js"></script>
+    <script defer src="scripts/tailwind-config.js"></script>
 
     <!-- SEO Meta Tags -->
     <meta name="title" content="Contact ND Constructions | Construction & Interior Experts in Hassan, Karnataka">
@@ -159,7 +159,7 @@
                     <h3 class="text-2xl font-semibold text-gray-800 mb-6">
                         Send Us a Message
                     </h3>
-                    <form id="contact-form" action="send-contact.php" method="POST">
+                    <form id="contact-form" method="POST">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label for="name" class="block text-gray-700 mb-2">Full Name</label>
@@ -214,7 +214,7 @@
                         </div>
                         <div class="mb-6">
                             <label class="custom-checkbox">
-                                <input type="checkbox" id="consent" name="consent"/>
+                                <input type="checkbox" id="consent" name="consent" />
                                 <span class="checkmark mr-3"></span>
                                 <span class="text-gray-700">I agree to the privacy policy and consent to being
                                     contacted about my inquiry.</span>
@@ -255,7 +255,6 @@
                                 <div>
                                     <h4 class="font-medium text-gray-800 mb-1">Phone Number</h4>
                                     <p class="text-gray-600">8050761016</p>
-                                    <p class="text-gray-600">6366944711</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -338,6 +337,14 @@
             });
         });
     </script>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("wCM-yTgkwYl3ZScZ3"); // Get this from your EmailJS dashboard
+        })();
+    </script>
+
 
     <script src="scripts/include.js"></script>
     <script src="scripts/contact-us.js"></script>
