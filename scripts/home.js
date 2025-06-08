@@ -292,66 +292,78 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
     // Testimonial Slider
-    const testimonialSlider = document.querySelector(".testimonial-slider");
-    const testimonialSlides = document.querySelector(".testimonial-slides");
-    const testimonialItems = document.querySelectorAll(".testimonial-slide");
-    const prevButton = document.getElementById("prev-testimonial");
-    const nextButton = document.getElementById("next-testimonial");
-    const dots = document.querySelectorAll("#testimonial-dots button");
+    const slidesContainer = document.querySelector('.testimonial-slides');
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const prevBtn = document.getElementById('prev-testimonial');
+    const nextBtn = document.getElementById('next-testimonial');
+    const dotsContainer = document.getElementById('testimonial-dots');
+
     let currentIndex = 0;
-    let slideWidth;
-    let slidesToShow;
-    const updateSlidesToShow = () => {
-        if (window.innerWidth < 768) {
-            slidesToShow = 1;
-        } else if (window.innerWidth < 1024) {
-            slidesToShow = 2;
-        } else {
-            slidesToShow = 3;
+    let totalSlides = slides.length;
+
+    // Dynamically create dots
+    function createDots() {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('button');
+            dot.className = 'w-3 h-3 rounded-full bg-gray-300 focus:outline-none';
+            dot.setAttribute('aria-label', `Go to testimonial ${i + 1}`);
+
+            dot.addEventListener('click', () => {
+                currentIndex = i;
+                updateSlider();
+            });
+
+            dotsContainer.appendChild(dot);
         }
-        slideWidth = testimonialSlider.clientWidth / slidesToShow;
-        updateSlider();
-    };
-    const updateSlider = () => {
-        testimonialItems.forEach((slide) => {
-            slide.style.minWidth = `${slideWidth}px`;
-        });
-        testimonialSlides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-        // Update dots
+    }
+
+    // Highlight active dot
+    function updateDots() {
+        const dots = dotsContainer.querySelectorAll('button');
         dots.forEach((dot, index) => {
-            dot.classList.remove("bg-primary", "dot-active");
-            dot.classList.add("bg-gray-300");
+            dot.classList.toggle('bg-primary', index === currentIndex);
+            dot.classList.toggle('bg-gray-300', index !== currentIndex);
         });
-        const activeDotIndex = Math.floor(currentIndex / slidesToShow);
-        if (dots[activeDotIndex]) {
-            dots[activeDotIndex].classList.remove("bg-gray-300");
-            dots[activeDotIndex].classList.add("bg-primary", "dot-active");
-        }
-    };
-    prevButton.addEventListener("click", () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateSlider();
-        }
+    }
+
+    // Slide to the current index
+    function updateSlider() {
+        const slideWidth = slides[0].getBoundingClientRect().width;
+        slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        updateDots();
+    }
+
+    // Go to next slide (infinite loop)
+    function goToNext() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+    }
+
+    // Go to previous slide (infinite loop)
+    function goToPrev() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlider();
+    }
+
+    // Event listeners
+    if (nextBtn && prevBtn) {
+        nextBtn.addEventListener('click', goToNext);
+        prevBtn.addEventListener('click', goToPrev);
+    }
+
+    // Resize adjustment
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(updateSlider, 200);
     });
-    nextButton.addEventListener("click", () => {
-        if (currentIndex < testimonialItems.length - slidesToShow) {
-            currentIndex++;
-            updateSlider();
-        }
-    });
-    dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-            currentIndex = index * slidesToShow;
-            if (currentIndex > testimonialItems.length - slidesToShow) {
-                currentIndex = testimonialItems.length - slidesToShow;
-            }
-            updateSlider();
-        });
-    });
-    // Initialize slider
-    updateSlidesToShow();
-    // Update on window resize
-    window.addEventListener("resize", updateSlidesToShow);
+
+    // Init
+    createDots();
+    updateSlider();
+    setInterval(goToNext, 5000); // Change every 5 seconds
+
+
 
 });
