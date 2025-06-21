@@ -92,7 +92,11 @@ document.addEventListener("DOMContentLoaded", function () {
         1: {
             title: "Lakshmi Villa Renovation",
             category: "Residential Renovation",
-            images: ["assets/projects/project-1.webp"],
+            images: [
+                "assets/projects/project-1.webp",
+                "assets/projects/project-1-1.webp",
+                "assets/projects/project-1-2.webp"
+            ],
             description:
                 "Complete renovation of a 3-bedroom independent home in Mysuru. The project involved modernizing interiors, upgrading plumbing & electrical work, and adding a new modular kitchen.",
             client: "Mr. Ramesh",
@@ -105,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
             category: "Residential New Build",
             images: ["assets/projects/project-2.webp"],
             description:
-                "Construction of a single-storey 2-bedroom house in a suburban area near Bengaluru, designed for a small family with basic amenities and a small garden.",
+                "Construction of a double-storey 3-bedroom house in a suburban area near Bengaluru, designed for a small family with basic amenities and a small garden.",
             client: "Mr. Srinivas",
             location: "Hoskote, Bengaluru Rural",
             completed: "January 2024",
@@ -116,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
             category: "Commercial Renovation",
             images: ["assets/projects/project-3.webp"],
             description:
-                "Refurbishment of a small office space in Hubli with improved lighting, workstation layout, and updated HVAC system for better energy efficiency.",
+                "Construction of a 3-bedroom house.",
             client: "Rajesh Enterprises",
             location: "Hubli",
             completed: "December 2023",
