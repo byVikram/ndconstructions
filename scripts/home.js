@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         3: {
             title: "Rajesh Office Space Renovation",
-            category: "Commercial Renovation",
+            category: "Residential New Build",
             images: ["assets/projects/project-3.webp"],
             description:
                 "Construction of a 3-bedroom house.",
