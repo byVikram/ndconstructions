@@ -90,84 +90,41 @@ document.addEventListener("DOMContentLoaded", function () {
     // Project details data
     const projectDetails = {
         1: {
-            title: "Oceanview Luxury Residence",
-            category: "Residential",
-            images: [
-                "/assets/interiors/image-1.png",
-            ],
+            title: "Lakshmi Villa Renovation",
+            category: "Residential Renovation",
+            images: ["assets/projects/project-1.webp"],
             description:
-                "This 6,500 square foot luxury residence features 5 bedrooms, 6.5 bathrooms, and panoramic ocean views. The project incorporated sustainable building practices, energy-efficient systems, and smart home technology throughout. Custom features include a chef's kitchen with premium appliances, a home theater, wine cellar, and an infinity pool overlooking the ocean.",
-            client: "Richardson Family",
-            location: "Coastal Heights, CA",
-            completed: "June 2024",
-            value: "$4.2 Million",
+                "Complete renovation of a 3-bedroom independent home in Mysuru. The project involved modernizing interiors, upgrading plumbing & electrical work, and adding a new modular kitchen.",
+            client: "Mr. Ramesh",
+            location: "Mysuru City",
+            completed: "March 2024",
+            value: "₹12 Lakhs",
         },
         2: {
-            title: "Horizon Corporate Center",
-            category: "Commercial",
-            images: [
-                "/assets/interiors/image-1.png",
-            ],
+            title: "Srinivas Individual Home",
+            category: "Residential New Build",
+            images: ["assets/projects/project-2.webp"],
             description:
-                "The Horizon Corporate Center is a 12-story, 250,000 square foot LEED Gold certified office building. The project features a striking glass facade, energy-efficient systems, and state-of-the-art amenities including a rooftop garden, fitness center, and conference facilities. The building incorporates sustainable design elements such as rainwater harvesting, solar panels, and high-efficiency HVAC systems.",
-            client: "Horizon Enterprises",
-            location: "Downtown Metropolitan",
-            completed: "March 2023",
-            value: "$78 Million",
+                "Construction of a single-storey 2-bedroom house in a suburban area near Bengaluru, designed for a small family with basic amenities and a small garden.",
+            client: "Mr. Srinivas",
+            location: "Hoskote, Bengaluru Rural",
+            completed: "January 2024",
+            value: "₹18 Lakhs",
         },
         3: {
-            title: "Riverfront Bridge Project",
-            category: "Infrastructure",
-            images: [
-                "/assets/interiors/image-1.png",
-            ],
+            title: "Rajesh Office Space Renovation",
+            category: "Commercial Renovation",
+            images: ["assets/projects/project-3.webp"],
             description:
-                "This 750-foot cable-stayed bridge connects two previously separated communities across the river. The project includes four vehicle lanes, dedicated bike lanes, and pedestrian walkways with scenic overlooks. The bridge features architectural lighting, public art installations, and viewing platforms. The design prioritized environmental protection of the river ecosystem during construction.",
-            client: "Metropolitan Transportation Authority",
-            location: "Riverfront District",
-            completed: "November 2022",
-            value: "$95 Million",
-        },
-        4: {
-            title: "Parkside Shopping Plaza",
-            category: "Commercial",
-            images: [
-                "/assets/interiors/image-1.png",
-            ],
-            description:
-                "Parkside Shopping Plaza is a 125,000 square foot open-air retail center featuring 35 stores, restaurants, and entertainment venues. The project includes a central plaza with water features, outdoor seating areas, and event space. The design incorporates sustainable elements such as permeable paving, native landscaping, and energy-efficient lighting throughout the property.",
-            client: "Parkside Development Group",
-            location: "Eastside District",
-            completed: "May 2023",
-            value: "$42 Million",
-        },
-        5: {
-            title: "The Residences at Westpark",
-            category: "Residential",
-            images: [
-                "/assets/interiors/image-1.png",
-            ],
-            description:
-                "The Residences at Westpark is a 200-unit luxury apartment complex featuring a mix of one, two, and three-bedroom units. The project includes resort-style amenities such as a pool with cabanas, fitness center, clubhouse, and dog park. The buildings incorporate energy-efficient design, smart home features, and high-end finishes throughout. The development also includes walking trails and preserved green space.",
-            client: "Westpark Properties",
-            location: "Westpark District",
-            completed: "August 2023",
-            value: "$65 Million",
-        },
-        6: {
-            title: "Riverside Community Park",
-            category: "Infrastructure",
-            images: [
-                "/assets/interiors/image-1.png",
-            ],
-            description:
-                "Riverside Community Park is a 25-acre public recreation space featuring sports facilities, walking trails, and sustainable landscaping. The project includes baseball fields, basketball and tennis courts, a playground, picnic areas, and an amphitheater for community events. The park incorporates green infrastructure such as rain gardens, native plantings, and permeable surfaces to manage stormwater and enhance the natural environment.",
-            client: "City Parks Department",
-            location: "Riverside District",
-            completed: "April 2024",
-            value: "$18 Million",
+                "Refurbishment of a small office space in Hubli with improved lighting, workstation layout, and updated HVAC system for better energy efficiency.",
+            client: "Rajesh Enterprises",
+            location: "Hubli",
+            completed: "December 2023",
+            value: "₹10 Lakhs",
         },
     };
+
+
     projectDetailsBtns.forEach((btn) => {
         btn.addEventListener("click", function () {
             const projectId = this.getAttribute("data-project");
@@ -176,76 +133,78 @@ document.addEventListener("DOMContentLoaded", function () {
                 let imagesHtml = "";
                 project.images.forEach((img, index) => {
                     imagesHtml += `<div class="project-slide ${index === 0 ? "block" : "hidden"}">
-      <img src="${img}" alt="${project.title}" class="w-full h-auto rounded-t-lg">
-      </div>`;
+                        <img src="${img}" alt="${project.title}" class="w-full h-auto rounded-t-lg">
+                        </div>`;
                 });
                 let dotsHtml = "";
                 project.images.forEach((_, index) => {
                     dotsHtml += `<button class="project-dot w-3 h-3 rounded-full ${index === 0 ? "bg-primary" : "bg-gray-300"} mx-1"></button>`;
                 });
+
                 projectModalContent.innerHTML = `
-      <div class="relative mb-4">
-      ${imagesHtml}
-      <div class="absolute top-1/2 left-4 transform -translate-y-1/2">
-      <button class="w-10 h-10 bg-white/70 rounded-full flex items-center justify-center text-gray-800 hover:bg-white transition-colors project-prev">
-      <i class="ri-arrow-left-s-line ri-lg"></i>
-      </button>
-      </div>
-      <div class="absolute top-1/2 right-4 transform -translate-y-1/2">
-      <button class="w-10 h-10 bg-white/70 rounded-full flex items-center justify-center text-gray-800 hover:bg-white transition-colors project-next">
-      <i class="ri-arrow-right-s-line ri-lg"></i>
-      </button>
-      </div>
-      <div class="absolute bottom-4 left-0 right-0 flex justify-center">
-      ${dotsHtml}
-      </div>
-      </div>
-      <div class="p-6">
-      <h3 class="text-2xl font-semibold text-gray-800 mb-2">${project.title}</h3>
-      <div class="flex items-center mb-4">
-      <span class="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">${project.category}</span>
-      </div>
-      <p class="text-gray-600 mb-6">${project.description}</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
-      <div class="flex items-start">
-      <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-1">
-      <i class="ri-user-line text-primary"></i>
-      </div>
-      <div>
-      <h4 class="font-medium text-gray-800">Client</h4>
-      <p>${project.client}</p>
-      </div>
-      </div>
-      <div class="flex items-start">
-      <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-1">
-      <i class="ri-map-pin-line text-primary"></i>
-      </div>
-      <div>
-      <h4 class="font-medium text-gray-800">Location</h4>
-      <p>${project.location}</p>
-      </div>
-      </div>
-      <div class="flex items-start">
-      <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-1">
-      <i class="ri-calendar-check-line text-primary"></i>
-      </div>
-      <div>
-      <h4 class="font-medium text-gray-800">Completed</h4>
-      <p>${project.completed}</p>
-      </div>
-      </div>
-      <div class="flex items-start">
-      <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-1">
-      <i class="ri-money-dollar-circle-line text-primary"></i>
-      </div>
-      <div>
-      <h4 class="font-medium text-gray-800">Project Value</h4>
-      <p>${project.value}</p>
-      </div>
-      </div>
-      </div>
-      </div>
-      `;
+                        <div class="relative mb-4">
+                        ${imagesHtml}
+                        <div class="absolute top-1/2 left-4 transform -translate-y-1/2">
+                        <button class="w-10 h-10 bg-white/70 rounded-full flex items-center justify-center text-gray-800 hover:bg-white transition-colors project-prev">
+                        <i class="ri-arrow-left-s-line ri-lg"></i>
+                        </button>
+                        </div>
+                        <div class="absolute top-1/2 right-4 transform -translate-y-1/2">
+                        <button class="w-10 h-10 bg-white/70 rounded-full flex items-center justify-center text-gray-800 hover:bg-white transition-colors project-next">
+                        <i class="ri-arrow-right-s-line ri-lg"></i>
+                        </button>
+                        </div>
+                        <div class="absolute bottom-4 left-0 right-0 flex justify-center">
+                        ${dotsHtml}
+                        </div>
+                        </div>
+                        <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">${project.title}</h3>
+                        <div class="flex items-center mb-4">
+                        <span class="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">${project.category}</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">${project.description}</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
+                        <div class="flex items-start">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-1">
+                        <i class="ri-user-line text-primary"></i>
+                        </div>
+                        <div>
+                        <h4 class="font-medium text-gray-800">Client</h4>
+                        <p>${project.client}</p>
+                        </div>
+                        </div>
+                        <div class="flex items-start">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-1">
+                        <i class="ri-map-pin-line text-primary"></i>
+                        </div>
+                        <div>
+                        <h4 class="font-medium text-gray-800">Location</h4>
+                        <p>${project.location}</p>
+                        </div>
+                        </div>
+                        <div class="flex items-start">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-1">
+                        <i class="ri-calendar-check-line text-primary"></i>
+                        </div>
+                        <div>
+                        <h4 class="font-medium text-gray-800">Completed</h4>
+                        <p>${project.completed}</p>
+                        </div>
+                        </div>
+                        <div class="flex items-start">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-1">
+                        <i class="ri-money-dollar-circle-line text-primary"></i>
+                        </div>
+                        <div>
+                        <h4 class="font-medium text-gray-800">Project Value</h4>
+                        <p>${project.value}</p>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        `;
+
                 projectModal.classList.remove("hidden");
                 projectModal.classList.add("flex");
                 // Initialize project slider
@@ -291,79 +250,5 @@ document.addEventListener("DOMContentLoaded", function () {
             projectModal.classList.remove("flex");
         }
     });
-    // Testimonial Slider
-    const slidesContainer = document.querySelector('.testimonial-slides');
-    const slides = document.querySelectorAll('.testimonial-slide');
-    const prevBtn = document.getElementById('prev-testimonial');
-    const nextBtn = document.getElementById('next-testimonial');
-    const dotsContainer = document.getElementById('testimonial-dots');
-
-    let currentIndex = 0;
-    let totalSlides = slides.length;
-
-    // Dynamically create dots
-    function createDots() {
-        dotsContainer.innerHTML = '';
-        for (let i = 0; i < totalSlides; i++) {
-            const dot = document.createElement('button');
-            dot.className = 'w-3 h-3 rounded-full bg-gray-300 focus:outline-none';
-            dot.setAttribute('aria-label', `Go to testimonial ${i + 1}`);
-
-            dot.addEventListener('click', () => {
-                currentIndex = i;
-                updateSlider();
-            });
-
-            dotsContainer.appendChild(dot);
-        }
-    }
-
-    // Highlight active dot
-    function updateDots() {
-        const dots = dotsContainer.querySelectorAll('button');
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('bg-primary', index === currentIndex);
-            dot.classList.toggle('bg-gray-300', index !== currentIndex);
-        });
-    }
-
-    // Slide to the current index
-    function updateSlider() {
-        const slideWidth = slides[0].getBoundingClientRect().width;
-        slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-        updateDots();
-    }
-
-    // Go to next slide (infinite loop)
-    function goToNext() {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateSlider();
-    }
-
-    // Go to previous slide (infinite loop)
-    function goToPrev() {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-        updateSlider();
-    }
-
-    // Event listeners
-    if (nextBtn && prevBtn) {
-        nextBtn.addEventListener('click', goToNext);
-        prevBtn.addEventListener('click', goToPrev);
-    }
-
-    // Resize adjustment
-    let resizeTimeout;
-    window.addEventListener('resize', () => {
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(updateSlider, 200);
-    });
-
-    // Init
-    createDots();
-    updateSlider();
-    setInterval(goToNext, 5000); // Change every 5 seconds
-
-
 
 });

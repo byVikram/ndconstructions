@@ -8,7 +8,7 @@
 
 
 	<!-- Favicon -->
-	<link rel="icon" href="/assets/favicon.webp" type="image/x-icon" />
+	<link rel="icon" href="assets/favicon.webp" type="image/x-icon" />
 
 	<!-- Preload Key Resources -->
 	<link rel="preload" as="image" href="assets/home-banner.webp" fetchpriority="high" />
@@ -48,9 +48,20 @@
 
 	<script defer src="scripts/tailwind-config.js"></script>
 
+	<!-- Owl Carousel CSS -->
+	<!-- <link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" /> -->
+
+	<!-- Owl Carousel JS (after jQuery) -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+
+
 	<!-- SEO Meta Tags -->
 	<meta name="title" content="ND Constructions | Top Construction Company in Hassan">
-	<meta name="description" 
+	<meta name="description"
 		content="ND Constructions is a top construction company in Hassan, Karnataka, offering expert residential, commercial, and infrastructure building services.">
 
 	<meta name="keywords"
@@ -64,7 +75,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://www.ndconstructions.in/">
 	<meta property="og:title" content="ND Constructions | Top Construction Company in Hassan">
-	<meta property="og:description" 
+	<meta property="og:description"
 		content="ND Constructions — a trusted construction company in Hassan, delivering quality residential, commercial, and infrastructure projects.">
 
 	<meta property="og:image" content="https://www.ndconstructions.in/assets/og-image.jpg">
@@ -582,16 +593,14 @@
 				<!-- Project 1 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="residential">
-					<img src="assets/services/Villa.webp" alt="Luxury Residence" loading="lazy"
+					<img src="assets/projects/project-1.webp" alt="Luxury Residence" loading="lazy"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
 						<h3 class="text-xl font-semibold text-white mb-2">
-							Skyline Hill Villa
+							Lakshmi Villa Renovation
 						</h3>
-						<p class="text-white/90 mb-4">
-							A contemporary hillside residence with panoramic city views, open-concept living, and custom
-							interior finishes.
+						<p class="text-white/90 mb-4">Complete renovation of a 3-bedroom independent home in Mysuru.
 						</p>
 
 						<div class="flex items-center">
@@ -604,22 +613,22 @@
 						</div>
 					</div>
 				</div>
+
 				<!-- Project 2 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
-					data-category="commercial">
-					<img src="assets/services/Villa.webp" loading="lazy"
+					data-category="residential">
+					<img src="assets/projects/project-2.webp" loading="lazy"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
 						<h3 class="text-xl font-semibold text-white mb-2">
-							Aurora Business Tower
+							Srinivas Individual Home
 						</h3>
 						<p class="text-white/90 mb-4">
-							A modern commercial hub with coworking floors, private offices, and energy-efficient
-							architecture in a prime location.
+							Construction of a single-storey 2-bedroom house in a suburban area near Bengaluru
 						</p>
 						<div class="flex items-center">
-							<span class="bg-white/20 text-white text-sm px-3 py-1 rounded-full mr-2">Commercial</span>
+							<span class="bg-white/20 text-white text-sm px-3 py-1 rounded-full mr-2">Residential</span>
 							<button
 								class="ml-auto bg-white text-primary px-4 py-2 !rounded-button whitespace-nowrap hover:bg-white/90 transition-colors project-details-btn"
 								data-project="2">
@@ -628,19 +637,19 @@
 						</div>
 					</div>
 				</div>
+
 				<!-- Project 3 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="infrastructure">
-					<img src="assets/services/Villa.webp" alt="Bridge Construction" loading="lazy"
+					<img src="assets/projects/project-3.webp" alt="Bridge Construction" loading="lazy"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
 					<div
 						class="project-overlay absolute inset-0 bg-primary/80 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
 						<h3 class="text-xl font-semibold text-white mb-2">
-							Central Transit Station
+							Rajesh Office Space Renovation
 						</h3>
 						<p class="text-white/90 mb-4">
-							A multi-modal public transportation terminal integrating bus, rail, and pedestrian access
-							with a modern urban design.
+							Refurbishment of a small office space in Hubli.
 						</p>
 
 						<div class="flex items-center">
@@ -654,8 +663,8 @@
 						</div>
 					</div>
 				</div>
-				<!-- Project 4 -->
-				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
+
+				<!-- <div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="commercial">
 					<img src="assets/services/Villa.webp" alt="Retail Center" loading="lazy"
 						class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
@@ -678,7 +687,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- Project 5 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="residential">
 					<img src="assets/services/Villa.webp" alt="Apartment Complex" loading="lazy"
@@ -703,7 +711,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- Project 6 -->
 				<div class="project-card relative rounded-lg overflow-hidden shadow-md group"
 					data-category="infrastructure">
 					<img src="assets/services/Villa.webp" alt="Public Park" loading="lazy"
@@ -728,7 +735,8 @@
 							</button>
 						</div>
 					</div>
-				</div>
+				</div> -->
+
 			</div>
 			<div class="text-center mt-12">
 				<button
@@ -768,222 +776,120 @@
 					with ND Construction.
 				</p>
 			</div>
-			<div class="relative">
-				<!-- Testimonial Slider -->
-				<div class="testimonial-slider overflow-hidden">
-					<div class="testimonial-slides flex transition-transform duration-500">
-						<!-- Testimonial 1 -->
-						<div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">
-							<div class="bg-gray-50 rounded-lg shadow-md p-6 h-full">
-								<div class="flex items-center mb-4">
-									<div class="text-yellow-400 flex">
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-									</div>
-								</div>
-								<p class="text-gray-600 mb-6 italic">
-									"ND Construction exceeded our expectations in every
-									way. Their attention to detail and commitment to quality was
-									evident throughout our home building process. The team was
-									professional, responsive, and delivered our dream home on
-									time and within budget."
-								</p>
-								<div class="flex items-center">
-									<div
-										class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4 flex items-center justify-center">
-										<!-- <img src="assets/testimonials/testimonials-1.jpg" alt="Client" loading="lazy"
-											class="w-full h-full object-cover" /> -->
-										<i class="fas fa-user text-xl"></i>
-									</div>
-									<div>
-										<h4 class="font-semibold text-gray-800">
-											Durg
-										</h4>
-										<p class="text-gray-600 text-sm">Residential Client</p>
-									</div>
-								</div>
+
+			<div class="owl-carousel owl-theme" id="testimonial-carousel">
+				<!-- Testimonial 1 -->
+				<div class="item testimonial-slide p-4">
+					<div class="bg-gray-50 rounded-lg shadow-md p-6 h-full">
+						<div class="flex items-center mb-4">
+							<div class="text-yellow-400 flex">
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
 							</div>
 						</div>
-						<!-- Testimonial 2 -->
-						<div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">
-							<div class="bg-gray-50 rounded-lg shadow-md p-6 h-full">
-								<div class="flex items-center mb-4">
-									<div class="text-yellow-400 flex">
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-									</div>
-								</div>
-								<p class="text-gray-600 mb-6 italic">
-									"As a commercial property developer, I've worked with many
-									construction firms, but ND stands out for their
-									expertise and professionalism. They managed our office
-									complex project flawlessly, navigating challenges with
-									innovative solutions and keeping us informed every step of
-									the way."
-								</p>
-								<div class="flex items-center">
-									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="assets/testimonials/testimonials-2.jpg" alt="Client" loading="lazy"
-											class="w-full h-full object-cover" />
-									</div>
-									<div>
-										<h4 class="font-semibold text-gray-800">Jennifer Chen</h4>
-										<p class="text-gray-600 text-sm">Commercial Client</p>
-									</div>
-								</div>
+						<p class="text-gray-600 mb-6 italic">
+							"ND Construction exceeded our expectations in every
+							way. Their attention to detail and commitment to quality was
+							evident throughout our home building process. The team was
+							professional, responsive, and delivered our dream home on
+							time and within budget."
+						</p>
+						<div class="flex items-center">
+							<div
+								class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4 flex items-center justify-center">
+								<!-- <img src="assets/testimonials/testimonials-1.jpg" alt="Client" loading="lazy"
+										class="w-full h-full object-cover" /> -->
+								<i class="fas fa-user text-xl"></i>
 							</div>
-						</div>
-						<!-- Testimonial 3 -->
-						<div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">
-							<div class="bg-gray-50 rounded-lg shadow-md p-6 h-full">
-								<div class="flex items-center mb-4">
-									<div class="text-yellow-400 flex">
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-half-fill"></i>
-									</div>
-								</div>
-								<p class="text-gray-600 mb-6 italic">
-									"The renovation of our historic downtown building was a
-									complex project requiring specialized skills. ND's
-									team demonstrated exceptional craftsmanship and respect for
-									the building's heritage while modernizing the
-									infrastructure. Their work has breathed new life into our
-									space."
-								</p>
-								<div class="flex items-center">
-									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="assets/testimonials/testimonials-3.jpg" alt="Client" loading="lazy"
-											class="w-full h-full object-cover" />
-									</div>
-									<div>
-										<h4 class="font-semibold text-gray-800">
-											Robert Johnson
-										</h4>
-										<p class="text-gray-600 text-sm">Renovation Client</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Testimonial 4 -->
-						<div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">
-							<div class="bg-gray-50 rounded-lg shadow-md p-6 h-full">
-								<div class="flex items-center mb-4">
-									<div class="text-yellow-400 flex">
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-									</div>
-								</div>
-								<p class="text-gray-600 mb-6 italic">
-									"Our municipality selected ND for our community
-									center project based on their reputation, and they delivered
-									beyond our expectations. Their team's collaborative
-									approach, transparent communication, and commitment to
-									sustainability aligned perfectly with our community values."
-								</p>
-								<div class="flex items-center">
-									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="assets/testimonials/testimonials-4.jpg" alt="Client" loading="lazy"
-											class="w-full h-full object-cover" />
-									</div>
-									<div>
-										<h4 class="font-semibold text-gray-800">
-											Maria Rodriguez
-										</h4>
-										<p class="text-gray-600 text-sm">Municipal Client</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Testimonial 5 -->
-						<div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">
-							<div class="bg-gray-50 rounded-lg shadow-md p-6 h-full">
-								<div class="flex items-center mb-4">
-									<div class="text-yellow-400 flex">
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-										<i class="ri-star-fill"></i>
-									</div>
-								</div>
-								<p class="text-gray-600 mb-6 italic">
-									"ND Construction transformed our outdated retail
-									space into a modern, inviting environment that has
-									significantly increased foot traffic. Their team worked
-									efficiently during off-hours to minimize disruption to our
-									business, and the quality of their work is evident in every
-									detail."
-								</p>
-								<div class="flex items-center">
-									<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-										<img src="assets/testimonials/testimonials-5.jpg" alt="Client" loading="lazy"
-											class="w-full h-full object-cover" />
-									</div>
-									<div>
-										<h4 class="font-semibold text-gray-800">Raj Patel</h4>
-										<p class="text-gray-600 text-sm">Retail Client</p>
-									</div>
-								</div>
+							<div>
+								<h4 class="font-semibold text-gray-800">
+									Durg
+								</h4>
+								<p class="text-gray-600 text-sm">Residential Client</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Slider Controls -->
-				<button
-					class="absolute top-1/2 left-4 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-gray-700 z-10 hover:bg-gray-100 transition-colors"
-					id="prev-testimonial">
-					<i class="ri-arrow-left-s-line ri-lg"></i>
-				</button>
-				<button
-					class="absolute top-1/2 right-4 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-gray-700 z-10 hover:bg-gray-100 transition-colors"
-					id="next-testimonial">
-					<i class="ri-arrow-right-s-line ri-lg"></i>
-				</button>
-			</div>
-			<!-- Slider Dots -->
-			<div class="flex justify-center mt-8" id="testimonial-dots">
-				<button class="w-3 h-3 rounded-full bg-primary mx-1 dot-active"></button>
-				<button class="w-3 h-3 rounded-full bg-gray-300 mx-1"></button>
-				<button class="w-3 h-3 rounded-full bg-gray-300 mx-1"></button>
+
+				<!-- Testimonial 2 -->
+				<div class="item testimonial-slide p-4">
+					<div class="bg-gray-50 rounded-lg shadow-md p-6 h-full">
+						<div class="flex items-center mb-4">
+							<div class="text-yellow-400 flex">
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+							</div>
+						</div>
+						<p class="text-gray-600 mb-6 italic">
+							"As a commercial property developer, I've worked with many construction firms, but ND stands
+							out for their expertise and professionalism. They managed our office complex project
+							flawlessly, navigating challenges with innovative solutions and keeping us informed every
+							step of the way."
+						</p>
+						<div class="flex items-center">
+							<div
+								class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4 flex items-center justify-center">
+								<!-- <img src="assets/testimonials/testimonials-1.jpg" alt="Client" loading="lazy"
+											class="w-full h-full object-cover" /> -->
+								<i class="fas fa-user text-xl"></i>
+							</div>
+							<div>
+								<h4 class="font-semibold text-gray-800">
+									Vikram KM
+								</h4>
+								<p class="text-gray-600 text-sm">Residential Client</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Testimonial 3 -->
+				<div class="item testimonial-slide p-4">
+					<div class="bg-gray-50 rounded-lg shadow-md p-6 h-full">
+						<div class="flex items-center mb-4">
+							<div class="text-yellow-400 flex">
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+							</div>
+						</div>
+						<p class="text-gray-600 mb-6 italic">
+							"ND Construction transformed our outdated retail space into a modern, inviting environment
+							that has significantly increased foot traffic. Their team worked efficiently during
+							off-hours to minimize disruption to our business, and the quality of their work is evident
+							in every detail."
+						</p>
+						<div class="flex items-center">
+							<div
+								class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4 flex items-center justify-center">
+								<!-- <img src="assets/testimonials/testimonials-1.jpg" alt="Client" loading="lazy"
+											class="w-full h-full object-cover" /> -->
+								<i class="fas fa-user text-xl"></i>
+							</div>
+							<div>
+								<h4 class="font-semibold text-gray-800">
+									Muruli KN
+								</h4>
+								<p class="text-gray-600 text-sm">Retail Client</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</div>
 	</section>
 
 	<!-- CTA Section -->
-	<section class="py-20 bg-primary">
-		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32 text-center">
-			<h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
-				Ready to Start Your Construction Project?
-			</h2>
-			<p class="text-white/90 max-w-3xl mx-auto mb-8 text-lg">
-				Contact us today for a free consultation and quote. Let's bring your
-				vision to life with quality craftsmanship and professional service.
-			</p>
-			<div class="flex flex-wrap justify-center gap-4">
-				<a href="tel:+918050761016"
-					class="bg-white text-primary px-6 py-3 !rounded-button whitespace-nowrap hover:bg-gray-100 transition-colors text-lg font-medium">
-					Call Now
-				</a>
-
-				<a href="/contact-us"
-					class="bg-transparent border-2 border-white text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-white/10 transition-colors text-lg font-medium">
-					Contact Us
-				</a>
-			</div>
-		</div>
+	<section class="py-20 bg-primary" id="cta-section">
 	</section>
 
 	<!-- Footer -->
@@ -998,6 +904,46 @@
 
 	<script src="scripts/include.js" defer></script>
 	<script src="scripts/home.js" defer></script>
+
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" defer />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" defer/>
+
+	<!-- Owl Carousel JS (after jQuery) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
+
+	<script defer>
+		document.addEventListener("DOMContentLoaded", function () {
+			$('#testimonial-carousel').owlCarousel({
+				loop: true,
+				margin: 30,
+				nav: false,
+				dots: true,
+				autoplay: true,
+				autoplayTimeout: 5000,
+				autoplayHoverPause: true,
+				responsive: {
+					0: {
+						items: 1
+					},
+					768: {
+						items: 2
+					},
+					1024: {
+						items: 3
+					}
+				}
+			});
+
+			loadCTA();
+		});
+	</script>
+
+
+
 </body>
 
 </html>

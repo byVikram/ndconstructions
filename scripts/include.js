@@ -78,3 +78,16 @@ function loadBanner(bannerData) {
 			}
 		});
 }
+
+
+function loadCTA() {
+	fetch("components/cta.html")
+		.then(res => res.text())
+		.then(data => {
+			const ctaContainer = document.getElementById("cta-section");
+			if (ctaContainer) {
+				ctaContainer.innerHTML = data;
+			}
+		});
+}
+
