@@ -247,7 +247,7 @@
 	</section>
 
 	<!-- Stats Section -->
-	<section class="py-16 bg-white">
+	<section class="py-16 bg-white" aria-label="Company performance statistics">
 		<div class="container mx-auto px-4">
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 				<div class="text-center p-6 rounded shadow-sm bg-gray-50">
@@ -280,7 +280,7 @@
 
 
 	<!-- Services Section -->
-	<section id="services" class="py-20 bg-white">
+	<section id="services" class="py-20 bg-white" aria-label="Overview of company services">
 		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
 			<div class="text-center mb-16">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-primary">
@@ -551,7 +551,7 @@
 	</section>
 
 	<!-- Projects Section -->
-	<section id="projects" class="py-20 bg-gray-50">
+	<section id="projects" class="py-20 bg-gray-50" aria-label="Portfolio of projects">
 		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
 			<div class="text-center mb-16">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-primary">
@@ -747,15 +747,20 @@
 	</section>
 
 	<!-- Project Modal -->
-	<div class="fixed inset-0 bg-black/70 z-50 hidden items-center justify-center" id="project-modal">
+	<div class="fixed inset-0 bg-black/70 z-50 hidden items-center justify-center" id="project-modal" role="dialog"
+		aria-modal="true" aria-labelledby="project-modal-title" aria-describedby="project-modal-description">
 		<div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto mx-4">
 			<div class="relative">
 				<button
 					class="absolute top-4 right-4 w-10 h-10 bg-black/60 rounded-full text-white z-10 sticky top-0 float-right"
-					id="close-modal">
+					id="close-modal" aria-label="Close modal">
 					<i class="ri-close-line ri-lg"></i>
 				</button>
 				<div class="project-modal-content p-6">
+					<!-- Hidden title and description for screen readers -->
+					<h2 id="project-modal-title" class="sr-only">Project Details</h2>
+					<p id="project-modal-description" class="sr-only">Detailed information about the selected project.
+					</p>
 					<!-- Content will be dynamically inserted here -->
 				</div>
 			</div>
@@ -763,7 +768,7 @@
 	</div>
 
 	<!-- Testimonials Section -->
-	<section id="testimonials" class="py-20 bg-white">
+	<section id="testimonials" class="py-20 bg-white" aria-label="Customer testimonials">
 		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
 			<div class="text-center mb-16">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-primary">
@@ -888,22 +893,17 @@
 	</section>
 
 	<!-- CTA Section -->
-	<section class="py-20 bg-primary" id="cta-section">
+	<section class="py-20 bg-primary" id="cta-section" aria-label="Call to action">
 	</section>
 
 	<!-- Footer -->
-	<footer id="footer" class="bg-gray-900 text-white pt-16 pb-8">
+	<footer id="footer" class="bg-gray-900 text-white pt-16 pb-8" aria-label="Site Footer">
 	</footer>
-
-	<!-- WhatsApp Floating Button -->
-	<a href="https://wa.me/+918050761016?text=Hello%20there!" target="_blank"
-		class="fixed bottom-20 right-6 w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg">
-		<i class="ri-whatsapp-line ri-lg"></i>
-	</a>
 
 	<!-- Back to Top Button -->
 	<button id="back-to-top"
-		class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-primary text-white shadow-lg flex items-center justify-center z-40 hover:bg-primary/90 transition-colors hidden">
+		class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-primary text-white shadow-lg flex items-center justify-center z-40 hover:bg-primary/90 transition-colors hidden"
+		aria-label="Back to top">
 		<i class="ri-arrow-up-line ri-lg"></i>
 	</button>
 

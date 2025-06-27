@@ -36,8 +36,8 @@
 
 	<!-- Tailwind (prefer compiled in production) -->
 	<script src="https://cdn.tailwindcss.com/3.4.16"></script>
-	<link rel="stylesheet" href="/styles/styles.css" />
-	<script defer src="/scripts/tailwind-config.js"></script>
+	<link rel="stylesheet" href="styles/styles.css" />
+	<script defer src="scripts/tailwind-config.js"></script>
 
 	<!-- SEO Meta -->
 	<meta name="description"
@@ -158,13 +158,14 @@
 	<!-- Placeholder where the banner will load -->
 
 	<!-- About Section -->
-	<section id="about">
+	<section id="about" aria-label="About us">
+		<h2 class="sr-only">About Us</h2>
 		<div id="banner"></div>
 		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
 			<!-- <div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32 py-20 w-full"> -->
 			<div class="text-center mb-16">
 				<h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 pt-10 text-primary">
-					Construction Company in Hassan You Can Trust
+					Trusted Construction Company
 				</h1>
 				<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
 
@@ -194,7 +195,7 @@
 					</p>
 					<section class="mb-8">
 						<h3 class="text-xl font-semibold text-gray-800 mb-3">
-							Our Mission as a Trusted Construction Company in Hassan
+							Our Mission as a Trusted Construction Company
 						</h3>
 						<p class="text-gray-600">
 							To deliver exceptional construction services that exceed client
@@ -204,13 +205,30 @@
 					</section>
 					<section class="mb-8">
 						<h3 class="text-xl font-semibold text-gray-800 mb-3">
-							Our Vision for Building in Hassan
+							Our Vision for Building
 						</h3>
 						<p class="text-gray-600">
 							To be the most trusted and innovative construction company,
 							recognized for transforming communities through sustainable
 							building practices and exceptional craftsmanship.
 						</p>
+					</section>
+
+					<!-- Our Services -->
+					<section class="mb-8">
+						<h3 class="text-xl font-semibold text-gray-800 mb-3">Construction Services</h3>
+						<p class="text-gray-600">
+							As a full-service construction company in Hassan, ND Constructions offers a wide range of
+							services including:
+						</p>
+						<ul class="list-disc list-inside text-gray-600 mt-2">
+							<li>Residential Interior Design</li>
+							<li>Commercial Interior Design</li>
+							<li>Renovation Services</li>
+							<li>Furniture And Decor Selection</li>
+							<li>Space Planning & Optimization</li>
+							<li>Home Staging Services</li>
+						</ul>
 					</section>
 				</article>
 			</div>
@@ -263,7 +281,7 @@
 	</section>
 
 	<!-- Footer -->
-	<footer id="footer" class="bg-gray-900 text-white pt-16 pb-8">
+	<footer id="footer" class="bg-gray-900 text-white pt-16 pb-8" aria-label="Site Footer">
 	</footer>
 
 	<script>
