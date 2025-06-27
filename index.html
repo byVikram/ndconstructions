@@ -199,6 +199,7 @@
 	}
 	</script>
 
+	<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 
@@ -212,10 +213,11 @@
 	<section id="home" class="hero-section min-h-screen flex items-center">
 		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32 py-20 w-full">
 			<div class="max-w-2xl">
-				<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+				<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+					data-aos="fade-right" data-aos-delay="300">
 					Building Your Vision, Creating Reality
 				</h1>
-				<p class="text-lg md:text-xl text-white/90 mb-8">
+				<p class="text-lg md:text-xl text-white/90 mb-8" data-aos="fade-right" data-aos-delay="600">
 					With over 2 year of experience, we deliver exceptional
 					construction services that transform your ideas into stunning
 					structures.
@@ -225,18 +227,17 @@
 				<div class="flex flex-wrap gap-4">
 					<a href="tel:+918050761016"
 						class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors text-lg font-medium inline-flex items-center"
-						aria-label="Call Now">
+						data-aos="fade-up" data-aos-delay="500" aria-label="Call Now">
 						<span>Call Now</span>
 						<i class="ri-phone-line text-xl ml-2"></i>
 					</a>
 
-
-					<a href="/contact-us"
+					<a href="/contact-us" data-aos="fade-up" data-aos-delay="600"
 						class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors text-lg font-medium inline-block">
 						Contact Us
 					</a>
 
-					<a href="/#projects"
+					<a href="/#projects" data-aos="fade-up" data-aos-delay="700"
 						class="bg-white text-primary px-6 py-3 !rounded-button whitespace-nowrap hover:bg-gray-100 transition-colors text-lg font-medium">
 						Our Projects
 					</a>
@@ -768,7 +769,9 @@
 	</div>
 
 	<!-- Testimonials Section -->
-	<section id="testimonials" class="py-20 bg-white" aria-label="Customer testimonials">
+	<section data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" id="testimonials" class="py-20 bg-white"
+		aria-label="Customer testimonials">
+
 		<div class="container mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
 			<div class="text-center mb-16">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-primary">
@@ -783,7 +786,7 @@
 
 			<div class="owl-carousel owl-theme" id="testimonial-carousel">
 				<!-- Testimonial 1 -->
-				<div class="item testimonial-slide p-4">
+				<div class="item testimonial-slide p-4" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="800">
 					<div class="bg-gray-50 rounded-lg shadow-md p-6 h-full">
 						<div class="flex items-center mb-4">
 							<div class="text-yellow-400 flex">
@@ -819,7 +822,7 @@
 				</div>
 
 				<!-- Testimonial 2 -->
-				<div class="item testimonial-slide p-4">
+				<div class="item testimonial-slide p-4" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="800">
 					<div class="bg-gray-50 rounded-lg shadow-md p-6 h-full">
 						<div class="flex items-center mb-4">
 							<div class="text-yellow-400 flex">
@@ -854,7 +857,7 @@
 				</div>
 
 				<!-- Testimonial 3 -->
-				<div class="item testimonial-slide p-4">
+				<div class="item testimonial-slide p-4" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="800">
 					<div class="bg-gray-50 rounded-lg shadow-md p-6 h-full">
 						<div class="flex items-center mb-4">
 							<div class="text-yellow-400 flex">
@@ -888,7 +891,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</section>
 
@@ -948,8 +950,21 @@
 		});
 	</script>
 
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+	<script>
+		window.addEventListener("load", () => {
+			AOS.init({
+				duration: 1000,
+				offset: 10,
+				once: true
+			});
 
-
+			// Refresh after dynamic components load
+			setTimeout(() => {
+				AOS.refresh();
+			}, 800);
+		});
+	</script>
 </body>
 
 </html>

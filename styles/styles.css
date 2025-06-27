@@ -2,6 +2,11 @@
 	content: "\f3c2";
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+
 body {
 	font-family: 'Poppins', sans-serif;
 	scroll-behavior: smooth;
@@ -195,7 +200,7 @@ input:checked+.slider:before {
 
 }
 
-.whatsapp-icon{
+.whatsapp-icon {
 	background-color: #25D366;
 }
 
