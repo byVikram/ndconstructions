@@ -35,7 +35,7 @@ body {
 
 
 .hero-section {
-	background-image: linear-gradient(to right, rgba(15, 76, 129, 0.9), rgba(15, 76, 129, 0.7), rgba(15, 76, 129, 0.5), rgba(15, 76, 129, 0.3), rgba(15, 76, 129, 0.1), rgba(0, 0, 0, 0)), url('/assets/home-banner.webp');
+	background-image: linear-gradient(to right, rgba(15, 76, 129, 0.9), rgba(15, 76, 129, 0.7), rgba(15, 76, 129, 0.5), rgba(15, 76, 129, 0.3), rgba(15, 76, 129, 0.1), rgba(0, 0, 0, 0)), url('/ndconstructions/assets/home-banner.webp');
 	background-size: cover;
 	background-position: center;
 }
