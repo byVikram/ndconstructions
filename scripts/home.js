@@ -211,6 +211,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 projectModal.classList.remove("hidden");
                 projectModal.classList.add("flex");
+
+                // Animate overlay fade-in
+                gsap.fromTo(projectModal, { opacity: 0 }, {
+                    opacity: 1,
+                    duration: 0.6,
+                    ease: "power2.out"
+                });
+
+                // Animate content zoom in from center
+                gsap.fromTo(projectModalContent, {
+                    scale: 0.9,
+                    opacity: 0,
+                    transformOrigin: "center center"
+                }, {
+                    scale: 1,
+                    opacity: 1,
+                    duration: 0.65,
+                    ease: "power2.out"
+                });
+
                 // Initialize project slider
                 const projectSlides = document.querySelectorAll(".project-slide");
                 const projectDots = document.querySelectorAll(".project-dot");
@@ -243,15 +263,55 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+
     closeModalBtn.addEventListener("click", function () {
         projectModal.classList.add("hidden");
         projectModal.classList.remove("flex");
+
+        // gsap.to(projectModalContent, {
+        //     scale: 0.9,
+        //     opacity: 0,
+        //     duration: 0.2,
+        //     ease: "power2.in",
+        //     onComplete: () => {
+        //         gsap.to(projectModal, {
+        //             opacity: 0,
+        //             duration: 0.2,
+        //             ease: "power2.in",
+        //             onComplete: () => {
+        //                 projectModal.classList.add("hidden");
+        //                 projectModal.classList.remove("flex");
+        //             }
+        //         });
+        //     }
+        // });
     });
+
+
     // Close modal when clicking outside
     projectModal.addEventListener("click", function (e) {
         if (e.target === projectModal) {
-            projectModal.classList.add("hidden");
-            projectModal.classList.remove("flex");
+            // projectModal.classList.add("hidden");
+            // projectModal.classList.remove("flex");
+
+            gsap.to(projectModalContent, {
+                scale: 0.8,
+                opacity: 0,
+                duration: 0.6,
+                ease: "power2.in",
+                onComplete: () => {
+                    gsap.to(projectModal, {
+                        opacity: 0,
+                        duration: 0.6,
+                        ease: "power2.in",
+                        onComplete: () => {
+                            projectModal.classList.add("hidden");
+                            projectModal.classList.remove("flex");
+                        }
+                    });
+                }
+            });
         }
     });
 
