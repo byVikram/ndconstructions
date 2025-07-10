@@ -117,6 +117,8 @@ window.addEventListener('load', () => {
     // SERVICE SECTION
     // ===========================================
 
+    console.log(document.querySelectorAll("#cta-section"));
+
     animateFrom(["#services h2", "#services .w-20", "#services-intro"], {
         trigger: "#services",
         props: {
@@ -174,6 +176,23 @@ window.addEventListener('load', () => {
                 ease: "power2.out"
             }
         });
+    });
+
+
+    // ===========================================
+    // TESTIMONIALS SECTION
+    // ===========================================
+
+    animateFrom(["#testimonials h2", "#testimonials .w-20", "#testimonials-intro"], {
+        trigger: "#testimonials",
+        props: {
+            opacity: 0,
+            duration: 1,
+            delay: 0.3,
+            ease: "power2.out",
+            x: (i, el) => el.matches(".w-20") ? 80 : el.matches("h2") ? -80 : 0,
+            y: (i, el) => el.matches("#testimonials-intro") ? 50 : 0
+        }
     });
 
 });
